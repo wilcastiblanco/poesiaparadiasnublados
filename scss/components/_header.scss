@@ -1,0 +1,153 @@
+
+@media (min-width: $break-extrasmall) {
+    .movil{
+        .nav-top{
+            height: 110px;
+            padding: 15px;
+            border-bottom: 0.5px solid #979797;
+            @include flex-row-betw;
+            .navbar-brand{
+                display: flex;
+                animation-name: logo;
+                animation-duration: 2s;
+                img{
+                    width: 242px;
+                }
+            }
+            @keyframes logo {
+                from{
+                    opacity: 0;
+                }
+                to {
+                opacity: 1;
+                }
+            }
+            .suscript{
+                display: none;
+            }
+        }
+        .nav-links{
+            position: absolute;
+            background-color: #EA6852;
+            z-index: 1;
+        }
+        .burger{
+            width: 35px;
+            height: 35px;
+            padding-top: 2px;
+            cursor: pointer;
+            div{
+                width: 25px;
+                height: 3px;
+                background-color: black;
+                margin: 5px;
+                transition: all 0.3s ease;
+            }
+        }
+        .nav-button{
+            .nav-links{
+                height: 90vh;
+                width: 50%;
+                border-bottom: 0.5px solid #979797;
+                background-color: #EA6852;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                transform: translateX(-100%);
+                transition: transform 0.5s ease-in;
+                li{
+                    a{
+                        color: white;
+                    }
+                }
+            }
+            .nav-active{
+                transform: translateX(0);
+            }
+            @keyframes navLinkFade {
+                from{
+                    opacity: 0;
+                    transform: translateX(-100%);
+                }
+                to {
+                opacity: 1;
+                transform: translateX(0px);
+                }
+            }
+        }
+        .toggle .line1{
+            transform: rotate(-45deg) translate(-5px, 6px);
+        }
+        .toggle .line2{
+            opacity: 0;
+        }
+        .toggle .line3{
+            transform: rotate(45deg) translate(-5px, -6px);
+        }   
+    }
+
+}
+
+@media screen and (min-width: $break-medium) {
+    .screen{
+        .nav-top{
+            height: 110px;
+            padding: 15px;
+            border-bottom: 0.5px solid #979797;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .navbar-brand{
+                img{
+                    width: 534px;
+                }
+            }
+            .suscript{
+                width: 270px;
+                height: 58px;
+                h3{
+                    font-size: 20px;
+                    line-height: 18px;
+                }
+                form{
+                    .in-but{
+                        display: flex;
+                    }
+                    input{
+                        width: 213px;
+                        height: 32px;
+                        border-radius: 0;
+                        line-height: 20px;
+                        font-family: 'Cormorant Garamond', serif;
+                        font-style: italic;
+                        font-size: 19px;
+                    }
+                    button{
+                        line-height: 20px;
+                        font-family: 'Cormorant Garamond', serif;
+                        font-style: italic;
+                        font-weight: 600;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+            .burger{
+                width: 35px;
+                height: 35px;
+                @include flex-col-cent;
+                display: none;
+                div{
+                    width: 25px;
+                    height: 3px;
+                    background-color: black;
+                    margin: 3px;
+                }
+            }
+        .nav-button{
+            border-bottom: 0.5px solid #979797;
+            @include hover-ul-li-pink; 
+        }
+    }
+}

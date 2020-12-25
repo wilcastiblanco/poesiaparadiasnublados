@@ -1,0 +1,90 @@
+
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+// @media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+// @media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+// @media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+// @media (min-width: 1200px) { ... }
+
+// Dispositivo	Resolución
+// Versión de escritorio (base)	940 a 1000 px
+// Versión para tabletas	940 a 780 px
+// Versión para teléfonos	780 px
+
+
+$break-extrasmall: 200px;
+$break-small: 576px;
+$break-medium: 768px;
+$break-large: 992px;
+$mbreak-extralarge: 1200px;
+
+// Mixes
+
+@mixin primary-color{
+    background-color: #EA6852;
+}
+@mixin flex-col-cent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-row-betw{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+@mixin hover-ul-li-pink{
+        ul{
+            li{
+                :hover{
+                    color: #EA6852
+                }
+            }
+        }
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+//Inicio código
+
+body, h1, h2, h3{
+line-height: 20px;
+font-family: 'Cormorant Garamond', serif;
+color: black;
+}
+
+html, body, h1, h2, h3, a{
+    font-family: 'Cormorant Garamond', serif;
+    color: black;
+}
+
+body, button, a{
+    font-family: 'Cormorant Garamond', serif;
+}
+.in-but{
+    button{
+        &:hover{
+            color: #EA6852
+        }
+    }
+}
