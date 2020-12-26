@@ -67,8 +67,7 @@ $mbreak-extralarge: 1200px;
 
 //Inicio código
 
-body, h1, h2, h3{
-line-height: 20px;
+body, h1, h2, h3, footer{
 font-family: 'Cormorant Garamond', serif;
 color: black;
 }
@@ -84,7 +83,12 @@ body, button, a{
 .in-but{
     button{
         &:hover{
-            color: #EA6852
+            color: #EA6852;
         }
+    }
+}
+body{
+    h1{
+        font-size: 32px;
     }
 }

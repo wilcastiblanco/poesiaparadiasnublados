@@ -17,6 +17,7 @@ add_theme_support( 'automatic-feed-links' );
 /* Add post thumbnail/featured image support
 /*-----------------------------------------------------------------------------------*/
 add_theme_support( 'post-thumbnails' );
+add_image_size( 'destacada', 764, 509, true);
 
 /*-----------------------------------------------------------------------------------*/
 /* Register main menu for Wordpress use

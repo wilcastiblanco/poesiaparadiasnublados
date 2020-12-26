@@ -6,8 +6,7 @@
   text-decoration: none;
 }
 
-body, h1, h2, h3 {
-  line-height: 20px;
+body, h1, h2, h3, footer {
   font-family: 'Cormorant Garamond', serif;
   color: black;
 }
@@ -23,6 +22,10 @@ body, button, a {
 
 .in-but button:hover {
   color: #EA6852;
+}
+
+body h1 {
+  font-size: 32px;
 }
 
 @media (min-width: 200px) {
@@ -173,29 +176,28 @@ body, button, a {
   }
 }
 
-main {
+main.carousel {
   width: 100%;
-  min-height: 400px;
-  margin: 10px 0;
-  background-color: black;
+  margin: 50px 0;
+  background-image: radial-gradient(48% 180%, #212121 44%, #232323 100%);
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-main h3 {
+main.carousel h1 {
   text-align: center;
   color: white;
 }
 
-main .contenedor-titulo-controles {
+main.carousel .contenedor-titulo-controles {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-main .contenedor-titulo-controles .indicadores button {
+main.carousel .contenedor-titulo-controles .indicadores button {
   background-color: white;
   height: 3px;
   width: 10px;
@@ -203,17 +205,17 @@ main .contenedor-titulo-controles .indicadores button {
   border: none;
 }
 
-main .contenedor-titulo-controles .indicadores button:hover {
+main.carousel .contenedor-titulo-controles .indicadores button:hover {
   background-color: #EA6852;
 }
 
-main .contenedor-principal {
+main.carousel .contenedor-principal {
   display: flex;
   justify-content: center;
   position: relative;
 }
 
-main .contenedor-principal .flecha-izquierda {
+main.carousel .contenedor-principal .flecha-izquierda {
   position: absolute;
   border: none;
   background-color: rgba(255, 255, 255, 0.3);
@@ -229,36 +231,38 @@ main .contenedor-principal .flecha-izquierda {
   top: 120px;
 }
 
-main .contenedor-principal .contenedor-carousel {
+main.carousel .contenedor-principal .contenedor-carousel {
   padding: 10px 0;
   overflow: hidden;
   scroll-behavior: smooth;
 }
 
-main .contenedor-principal .contenedor-carousel .carousel {
+main.carousel .contenedor-principal .contenedor-carousel .carousel {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
-main .contenedor-principal .contenedor-carousel .carousel .last-podcast {
+main.carousel .contenedor-principal .contenedor-carousel .carousel .last-podcast {
   height: 285px;
   width: 227px;
   margin: 10px;
-  transition: .3s ease all;
+  transition: .6s ease all;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  filter: brightness(0.8);
 }
 
-main .contenedor-principal .contenedor-carousel .carousel .last-podcast img {
+main.carousel .contenedor-principal .contenedor-carousel .carousel .last-podcast img {
   vertical-align: top;
 }
 
-main .contenedor-principal .contenedor-carousel .carousel .last-podcast:hover {
-  transform: scale(1.1);
+main.carousel .contenedor-principal .contenedor-carousel .carousel .last-podcast:hover {
+  transform: scale(1.05);
   transform-origin: center;
+  filter: brightness(1);
 }
 
-main .contenedor-principal .flecha-derecha {
+main.carousel .contenedor-principal .flecha-derecha {
   position: absolute;
   border: none;
   background-color: rgba(255, 255, 255, 0.3);
@@ -272,5 +276,62 @@ main .contenedor-principal .flecha-derecha {
   transition: .2s ease all;
   right: 0;
   top: 120px;
+}
+
+main.lastests h1 {
+  text-align: center;
+  border-top: 0.5px solid #979797;
+  border-bottom: 0.5px solid #979797;
+  margin: 50px 0;
+}
+
+footer {
+  height: 656px;
+  line-height: 25px;
+}
+
+footer .form-footer {
+  height: 448px;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+footer .site-info {
+  height: 168px;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .site-info ul {
+  display: flex;
+  justify-self: center;
+}
+
+footer .site-info ul li {
+  padding: 0 20px;
+}
+
+footer .site-info ul li a {
+  font-size: 20px;
+  color: white;
+}
+
+footer .site-info p {
+  font-size: 22px;
+  text-align: center;
+  color: #EA6852;
+}
+
+footer .foot {
+  height: 42px;
+  background-color: #333333;
+  display: flex;
+  justify-content: center;
+  color: white;
 }
 /*# sourceMappingURL=style_PDN.css.map */
