@@ -11,7 +11,7 @@
 	</div>
 	<div class="site-info">
 		<ul>
-			<li><a href="">Sobre Pesía</a></li>
+			<li><a href="">Sobre Poesía</a></li>
 			<li><a href="">Contacto</a></li>
 			<li><a href="">Políticas</a></li>
 		</ul>
@@ -21,7 +21,12 @@
 		</p>
 	</div><!-- .site-info -->
 	<div class="foot">
-		<h5>diseñado por: </h5>
+		<h5>diseñado por: 
+			<a href="https://www.mutacionessonoras.com/" target=”_blank”>
+				<img src="<?php echo get_template_directory_uri();?>/img/virallab.svg" height="28px" margin-bottom="50px" alt=""> 
+			</a> 
+			®
+		</h5>
 	</div>
 </footer><!-- #colophon .site-footer -->
 

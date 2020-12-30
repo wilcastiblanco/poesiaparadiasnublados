@@ -17,7 +17,7 @@ add_theme_support( 'automatic-feed-links' );
 /* Add post thumbnail/featured image support
 /*-----------------------------------------------------------------------------------*/
 add_theme_support( 'post-thumbnails' );
-add_image_size( 'destacada', 764, 509, true);
+add_image_size( 'destacada', 800, 500, true);
 
 /*-----------------------------------------------------------------------------------*/
 /* Register main menu for Wordpress use
@@ -87,4 +87,27 @@ function Bootstrap_scripts(){
 }
 
 add_action( 'wp_enqueue_scripts', 'Bootstrap_scripts' ); // Register this fxn and allow Wordpress to call it automatcally in the header
+
+
+
+/*-----------------------------------------------------------------------------------*/
+/* Length to the_except
+/*--------
+
+// /**
+//  * Filter the except length to 20 words.
+//  *
+//  * @param int $length Excerpt length.
+//  * @return int (Maybe) modified excerpt length.
+//  */
+function wpdocs_custom_excerpt_length( $length ) {
+    return 20;
+}
+add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
+
+function new_excerpt_more($more) {
+    global $post;
+    return '... <a href="'. get_permalink($post->ID) . '">leer mas</a>.';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
 

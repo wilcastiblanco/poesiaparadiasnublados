@@ -89,6 +89,21 @@ body, button, a{
 }
 body{
     h1{
+
         font-size: 32px;
+    }
+    h2{
+        font-size: 28px;
+    }
+}
+main{
+    a{
+        color: gray;
+        font-style: italic;
+        &:hover{
+            color: #EA6852;
+            text-decoration: none;
+            transition: color 0.4s;
+        }
     }
 }
