@@ -28,8 +28,7 @@
         }
         .nav-links{
             position: absolute;
-            background-color: #EA6852;
-            z-index: 1;
+            z-index: 1000;
         }
         .burger{
             width: 35px;
@@ -45,11 +44,13 @@
             }
         }
         .nav-button{
+            z-index: 2000;
             .nav-links{
-                height: 90vh;
-                width: 50%;
+                height: 80%;
+                width: 100%;
                 border-bottom: 0.5px solid #979797;
-                background-color: #EA6852;
+                background-color: rgba(0, 0, 0, 0.85);
+                position: fixed;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-around;

@@ -74,8 +74,7 @@ main a:hover {
   }
   .movil .nav-links {
     position: absolute;
-    background-color: #EA6852;
-    z-index: 1;
+    z-index: 1000;
   }
   .movil .burger {
     width: 35px;
@@ -90,11 +89,15 @@ main a:hover {
     margin: 5px;
     transition: all 0.3s ease;
   }
+  .movil .nav-button {
+    z-index: 2000;
+  }
   .movil .nav-button .nav-links {
-    height: 90vh;
-    width: 50%;
+    height: 80%;
+    width: 100%;
     border-bottom: 0.5px solid #979797;
-    background-color: #EA6852;
+    background-color: rgba(0, 0, 0, 0.85);
+    position: fixed;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -304,25 +307,37 @@ main a:hover {
 
 .lastests .posts-container {
   display: flex;
+  justify-content: center;
+  align-items: flex-start;
   flex-wrap: wrap;
 }
 
 .lastests .posts-container article.post {
-  width: 50%;
-  padding: 10px;
+  width: 505px;
+  height: 336;
+  margin: 20px;
 }
 
 .lastests .posts-container article.post:nth-child(1) {
   width: 100%;
 }
 
+.lastests .posts-container article.post:nth-child(1) hr.division {
+  display: block;
+  margin-top: 50px;
+}
+
 .lastests .posts-container article.post:nth-child(1) .post-container {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .lastests .posts-container article.post:nth-child(1) .post-container .text-post {
-  width: 100%;
-  margin-left: 50px;
+  width: 505px;
+  height: 336px;
+  margin-left: 40px;
 }
 
 .lastests .posts-container article.post h2 {
@@ -371,6 +386,10 @@ main a:hover {
 .lastests .posts-container a {
   font-size: 22px;
   line-height: 10px;
+}
+
+.lastests .posts-container hr.division {
+  display: none;
 }
 
 footer {

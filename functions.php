@@ -16,8 +16,21 @@ add_theme_support( 'automatic-feed-links' );
 /*-----------------------------------------------------------------------------------*/
 /* Add post thumbnail/featured image support
 /*-----------------------------------------------------------------------------------*/
+
+// without parameter -> Post Thumbnail (as set by theme using set_post_thumbnail_size())
+the_post_thumbnail();
+
+//the_post_thumbnail('thumbnail');       // Thumbnail (default 150px x 150px max)
+//the_post_thumbnail('medium');          // Medium resolution (default 300px x 300px max)
+//the_post_thumbnail('large');           // Large resolution (default 1024px x 1024px max)
+//the_post_thumbnail('medium_large');    // Medium Large resolution (default 768px x 0px max)
+//the_post_thumbnail('full');            // Original image resolution (unmodified)
+
+//the_post_thumbnail( array(100,100) );  // Other resolutions
+
+
 add_theme_support( 'post-thumbnails' );
-add_image_size( 'destacada', 800, 500, true);
+add_image_size( 'destacada', 505, 336, true);
 
 /*-----------------------------------------------------------------------------------*/
 /* Register main menu for Wordpress use
