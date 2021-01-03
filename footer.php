@@ -15,9 +15,9 @@
 			<li><a href="">Contacto</a></li>
 			<li><a href="">Políticas</a></li>
 		</ul>
-		<p>“El único verdadero viaje de descubrimiento consiste <br>
+		<p>“El único verdadero viaje de descubrimiento consiste
 			no en buscar nuevos paisajes, sino en mirar con nuevos ojos.” <br>
-			Marcel Proust
+			<small>Marcel Proust</small>
 		</p>
 	</div><!-- .site-info -->
 	<div class="foot">

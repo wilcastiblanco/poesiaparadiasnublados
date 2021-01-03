@@ -9,10 +9,10 @@
 get_header(); // This fxn gets the header.php file and renders it ?>
 <primary>
 	<main>
-		<?php include 'carousel.php';
+		<?php include 'includes/carousel.php';
 			//Incluye carousel
 		?>
-		<?php include 'lastest-posts.php';
+		<?php include 'includes/lastest-posts.php';
 			//Incluye ultimos posts
 		?>
 	</main>

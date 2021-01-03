@@ -1,51 +1,67 @@
-footer{
-    height: 656px;
-    line-height: 25px;
-    font-weight: lighter;
-    .form-footer{
-        height: 448px;
-        background-size: 100%;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-    .site-info{
-        height: 168px;
-        width: 100%;
-        background-color: black;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        ul{
+@media (min-width: $break-extrasmall){
+
+    footer{
+        height: 656px;
+        line-height: 25px;
+        font-weight: lighter;
+        .form-footer{
+            height: 448px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .site-info{
+            height: 168px;
+            width: 100%;
+            background-color: black;
             display: flex;
-            justify-self: center;
-            li{
-                padding: 0 20px;
-                a{
-                    font-size: 20px;
-                    color: white;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            ul{
+                display: flex;
+                justify-self: center;
+                li{
+                    padding: 0 20px;
+                    a{
+                        font-size: 20px;
+                        color: white;
+                    }
+                }
+            }
+            p{
+                width: 400px;
+                font-size: 22px;
+                text-align: center;
+                color: #EA6852;
+            }
+        }
+        .foot{
+            height: 42px;
+            background-color: rgb(51, 51, 51);
+            display: flex;
+            justify-content: center;
+            color: white;
+            h5{
+                font-family: sans-serif;
+                font-weight: lighter;
+                font-size: 15px;
+                line-height: 50px;
+                img{
+                    margin-bottom: 10px;
                 }
             }
         }
-        p{
-            font-size: 22px;
-            text-align: center;
-            color: #EA6852;
-        }
     }
-    .foot{
-        height: 42px;
-        background-color: rgb(51, 51, 51);
-        display: flex;
-        justify-content: center;
-        color: white;
-        h5{
-            font-family: sans-serif;
-            font-weight: lighter;
-            font-size: 15px;
-            line-height: 50px;
-            img{
-                margin-bottom: 10px;
+
+}
+
+
+@media screen and (min-width: $break-large){
+    footer{
+        .site-info{
+            p{
+                width: 550px;
             }
         }
     }

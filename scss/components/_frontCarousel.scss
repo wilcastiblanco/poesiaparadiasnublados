@@ -1,0 +1,164 @@
+@mixin flechas {
+    position: absolute;
+    border: none;
+    background-color:rgba($color: #ffffff, $alpha: 0.3);
+    font-size: 40;
+    border-radius: 50px;
+    top: calc(50% - 25%);
+    line-height: 40px;
+    width: 50px;
+    color: black;
+    z-index: 500;
+    transition: .2s ease all;
+    
+}
+
+// Query Smartphone
+@media (min-width: $break-extrasmall){
+    .carousel{
+        margin: 16px;
+        background-image: radial-gradient(48% 180%, #212121 44%, #232323 100%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h1{
+            text-align: center;
+            color: white;
+        }
+        .contenedor-titulo-controles{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .indicadores{
+                button{
+                    background-color: white;
+                    height: 3px;
+                    width: 10px;
+                    cursor: pointer;
+                    border: none;
+                    &:hover{
+                        background-color: #EA6852
+                    }
+                }
+            }
+        }
+        .contenedor-principal{
+            display: flex;
+            justify-content: center;
+            position: relative;
+            .flecha-izquierda{
+                @include flechas;
+                left: 5px;
+                top: 120px;
+            }
+            .contenedor-carousel{
+                padding: 10px 0;
+                overflow: hidden;
+                scroll-behavior: smooth;
+                .carousel{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    .last-podcast{
+                        width: 227px;
+                        margin: 10px;
+                        transition: .6s ease all;
+                        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+                        border-radius: 10px;
+                        filter: brightness(0.8);
+                        img{
+                            vertical-align: top; 
+                            border-radius: 10px;
+                        }
+                    }
+                    .last-podcast:hover{
+                        transform: scale(1.05);
+                        transform-origin: center;
+                        filter: brightness(1.0);
+                    }
+                }
+            }
+            .flecha-derecha{
+                @include flechas;
+                right: 5px;
+                top: 120px;
+            }
+        }
+    }
+}
+
+
+
+// Query Screen
+@media screen and (min-width: $break-medium){
+    .carousel{
+        margin: 16px;
+        background-image: radial-gradient(48% 180%, #212121 44%, #232323 100%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h1{
+            text-align: center;
+            color: white;
+        }
+        .contenedor-titulo-controles{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .indicadores{
+                button{
+                    background-color: white;
+                    height: 3px;
+                    width: 10px;
+                    cursor: pointer;
+                    border: none;
+                    &:hover{
+                        background-color: #EA6852
+                    }
+                }
+            }
+        }
+        .contenedor-principal{
+            display: flex;
+            justify-content: center;
+            position: relative;
+            .flecha-izquierda{
+                @include flechas;
+                left: 5px;
+                top: 120px;
+            }
+            .contenedor-carousel{
+                padding: 10px 0;
+                overflow: hidden;
+                scroll-behavior: smooth;
+                .carousel{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    .last-podcast{
+                        width: 227px;
+                        margin: 10px;
+                        transition: .6s ease all;
+                        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+                        filter: brightness(0.8);
+                        img{
+                            vertical-align: top; 
+                        }
+                    }
+                    .last-podcast:hover{
+                        transform: scale(1.05);
+                        transform-origin: center;
+                        filter: brightness(1.0);
+                    }
+                }
+            }
+            .flecha-derecha{
+                @include flechas;
+                right: 5px;
+                top: 120px;
+            }
+        }
+    }
+}

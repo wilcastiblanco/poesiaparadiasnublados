@@ -30,7 +30,15 @@ the_post_thumbnail();
 
 
 add_theme_support( 'post-thumbnails' );
-add_image_size( 'destacada', 505, 336, true);
+add_image_size( 'destacada', 505, 336, false);
+add_image_size( 'destacada-sm', 340, 240, false);
+add_image_size( 'destacada-podcast', 227, 285, false);
+
+/*-----------------------------------------------------------------------------------*/
+/* Consultas reutilizables
+/*-----------------------------------------------------------------------------------*/
+
+require get_template_directory() . '/includes/queries.php';
 
 /*-----------------------------------------------------------------------------------*/
 /* Register main menu for Wordpress use

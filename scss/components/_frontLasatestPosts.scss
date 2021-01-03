@@ -1,0 +1,191 @@
+
+// Query Smartphone
+@media (min-width: $break-extrasmall){
+
+    .lastests{
+        width: 100%;
+        h1{
+            text-align: center;
+            border-top: 0.5px solid #979797;
+            border-bottom: 0.5px solid #979797;
+            margin: 50px 0;
+        }//h1
+
+        .posts-container{
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            article.post{
+                width: 100%; //Change
+                margin: 20px;
+
+                &:nth-child(1){
+                    width: 100%;
+                    hr.division{
+                        display: block;
+                        margin-top: 50px;
+                    }//hr.division
+                    .post-container{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-wrap: wrap;
+                        .text-post{
+                            width: 100%; //Change
+                            //height: 336px; //Change
+                            //margin-left: 40px; //Change
+                        } //end text-post
+                    }//post-container
+                }//&:nth-child
+
+                .post-container{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-wrap: wrap;
+                }//.post-container //all Change
+                h2{
+                    margin-top: 20px;
+                    a{
+                        font-family: 'Cormorant Garamond', serif;
+                        color: black;
+                        font-size: 28px;
+                        &:hover{
+                            color: #EA6852;
+                            text-decoration: none;
+                            transition: color 0.2s;
+                        }
+                    } //a
+                } //h2
+                .post-meta{
+                    font-family: 'Cormorant Garamond', serif;
+                    font-style: italic;
+                    font-weight: lighter;
+                    #text{
+                        font-family: 'Cormorant Garamond', serif;
+                        font-style: italic;
+                        font-weight: lighter;
+                    }
+                }//.post-meta
+            }//article.post
+            .the-content{
+                p{
+                    width: 100%;
+                    margin-top: 20px;
+                    font-family: 'Cormorant Garamond', serif;
+                    font-style: italic;
+                    font-weight: lighter;
+                    font-size: 22px;
+                    line-height: 28px;
+                    color: black;
+                }//p
+            }//.the-content
+            .categoria{
+                margin-top: 40px;
+            }//.categoria
+            a{
+                font-size: 22px;
+                line-height: 10px;
+            }//a
+                hr.division{
+                    display: none;
+                }//hr.division
+        }//.posts-container
+
+    }//.lastests
+
+} // End Query
+
+
+
+// Query Smartphone
+@media screen and (min-width: $break-large){
+
+    .lastests{
+        width: 100%;
+        h1{
+            text-align: center;
+            border-top: 0.5px solid #979797;
+            border-bottom: 0.5px solid #979797;
+            margin: 50px 0;
+        }//h1
+
+        .posts-container{
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            article.post{
+                width: 505px;
+                height: 336;
+                margin: 20px;
+                &:nth-child(1){
+                    width: 100%;
+                    hr.division{
+                        display: block;
+                        margin-top: 50px;
+                    }//hr.division
+                    .post-container{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-wrap: wrap;
+                        .text-post{
+                            width: 505px;
+                            height: 336px;
+                            margin-left: 40px;
+                        } //end text-post
+                    }//post-container
+                }//&:nth-child
+                h2{
+                    margin-top: 20px;
+                    a{
+                        font-family: 'Cormorant Garamond', serif;
+                        color: black;
+                        font-size: 28px;
+                        &:hover{
+                            color: #EA6852;
+                            text-decoration: none;
+                            transition: color 0.2s;
+                        }
+                    } //a
+                } //h2
+                .post-meta{
+                    font-family: 'Cormorant Garamond', serif;
+                    font-style: italic;
+                    font-weight: lighter;
+                    #text{
+                        font-family: 'Cormorant Garamond', serif;
+                        font-style: italic;
+                        font-weight: lighter;
+                    }
+                }//.post-meta
+            }//article.post
+            .the-content{
+                p{
+                    width: 100%;
+                    margin-top: 20px;
+                    font-family: 'Cormorant Garamond', serif;
+                    font-style: italic;
+                    font-weight: lighter;
+                    font-size: 22px;
+                    line-height: 28px;
+                    color: black;
+                }//p
+            }//.the-content
+            .categoria{
+                margin-top: 40px;
+            }//.categoria
+            a{
+                font-size: 22px;
+                line-height: 10px;
+            }//a
+                hr.division{
+                    display: none;
+                }//hr.division
+        }//.posts-container
+
+    }//.lastests
+
+} // End Query
