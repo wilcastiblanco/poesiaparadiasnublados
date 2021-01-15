@@ -6,20 +6,6 @@
   text-decoration: none;
 }
 
-body, h1, h2, h3, footer {
-  font-family: 'Cormorant Garamond', serif;
-  color: black;
-}
-
-html, body, h1, h2, h3, a {
-  font-family: 'Cormorant Garamond', serif;
-  color: black;
-}
-
-body, button, a {
-  font-family: 'Cormorant Garamond', serif;
-}
-
 .in-but button:hover {
   color: #EA6852;
 }
@@ -135,7 +121,7 @@ main a:hover {
 @media screen and (min-width: 768px) {
   .screen .nav-top {
     height: 110px;
-    padding: 15px;
+    padding: 15px 20px;
     border-bottom: 0.5px solid #979797;
     display: flex;
     align-items: center;
@@ -160,13 +146,13 @@ main a:hover {
     height: 32px;
     border-radius: 0;
     line-height: 20px;
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Cormorant', serif;
     font-style: italic;
     font-size: 19px;
   }
   .screen .nav-top .suscript form button {
     line-height: 20px;
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Cormorant', serif;
     font-style: italic;
     font-weight: 600;
     font-size: 16px;
@@ -188,9 +174,38 @@ main a:hover {
   }
   .screen .nav-button {
     border-bottom: 0.5px solid #979797;
+    padding: 0 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   .screen .nav-button ul li :hover {
     color: #EA6852;
+  }
+  .screen .nav-button .menu-menu-container {
+    height: 20px;
+    margin: 10px;
+  }
+  .screen .nav-button .menu-menu-container ul {
+    display: flex;
+  }
+  .screen .nav-button .menu-menu-container ul a {
+    color: black;
+    margin-right: 20px;
+    font-size: 16px;
+  }
+  .screen .nav-button .menu-menu-container ul a:hover {
+    color: #EA6852;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .screen .nav-button .nav-search {
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+  }
+  .screen .nav-button .nav-search i {
+    color: gray;
   }
 }
 
@@ -422,7 +437,7 @@ main a:hover {
     margin-top: 20px;
   }
   .lastests .posts-container article.post h2 a {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Cormorant', serif;
     color: black;
     font-size: 28px;
   }
@@ -432,19 +447,19 @@ main a:hover {
     transition: color 0.2s;
   }
   .lastests .posts-container article.post .post-meta {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Cormorant', serif;
     font-style: italic;
     font-weight: lighter;
   }
   .lastests .posts-container article.post .post-meta #text {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Cormorant', serif;
     font-style: italic;
     font-weight: lighter;
   }
   .lastests .posts-container .the-content p {
     width: 100%;
     margin-top: 20px;
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Cormorant', serif;
     font-style: italic;
     font-weight: lighter;
     font-size: 22px;
@@ -482,14 +497,9 @@ main a:hover {
   .lastests .posts-container article.post {
     width: 505px;
     height: 336;
-    margin: 20px;
   }
   .lastests .posts-container article.post:nth-child(1) {
     width: 100%;
-  }
-  .lastests .posts-container article.post:nth-child(1) hr.division {
-    display: block;
-    margin-top: 50px;
   }
   .lastests .posts-container article.post:nth-child(1) .post-container {
     display: flex;
@@ -506,7 +516,7 @@ main a:hover {
     margin-top: 20px;
   }
   .lastests .posts-container article.post h2 a {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Cormorant', serif;
     color: black;
     font-size: 28px;
   }
@@ -516,19 +526,19 @@ main a:hover {
     transition: color 0.2s;
   }
   .lastests .posts-container article.post .post-meta {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Cormorant', serif;
     font-style: italic;
     font-weight: lighter;
   }
   .lastests .posts-container article.post .post-meta #text {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Cormorant', serif;
     font-style: italic;
     font-weight: lighter;
   }
   .lastests .posts-container .the-content p {
     width: 100%;
     margin-top: 20px;
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Cormorant', serif;
     font-style: italic;
     font-weight: lighter;
     font-size: 22px;
@@ -542,17 +552,9 @@ main a:hover {
     font-size: 22px;
     line-height: 10px;
   }
-  .lastests .posts-container hr.division {
-    display: none;
-  }
 }
 
 @media (min-width: 200px) {
-  footer {
-    height: 656px;
-    line-height: 25px;
-    font-weight: lighter;
-  }
   footer .form-footer {
     height: 448px;
     background-size: cover;
@@ -568,44 +570,181 @@ main a:hover {
     justify-content: center;
     align-items: center;
   }
-  footer .site-info ul {
+  footer .site-info .menu-footer-menu-container ul {
     display: flex;
     justify-self: center;
   }
-  footer .site-info ul li {
-    padding: 0 20px;
-  }
-  footer .site-info ul li a {
-    font-size: 20px;
+  footer .site-info .menu-footer-menu-container ul li a {
     color: white;
+    padding: 20px;
+  }
+  footer .site-info .menu-footer-menu-container ul li a:hover {
+    color: #EA6852;
+    text-decoration: none;
+    transition: color 0.2s;
   }
   footer .site-info p {
     width: 400px;
-    font-size: 22px;
     text-align: center;
+    line-height: normal;
     color: #EA6852;
   }
   footer .foot {
     height: 42px;
+    padding: 5px;
     background-color: #333333;
     display: flex;
     justify-content: center;
+  }
+  footer .foot p {
     color: white;
   }
-  footer .foot h5 {
-    font-family: sans-serif;
-    font-weight: lighter;
-    font-size: 15px;
-    line-height: 50px;
-  }
-  footer .foot h5 img {
+  footer .foot p img {
     margin-bottom: 10px;
   }
 }
 
 @media screen and (min-width: 992px) {
+  footer .form-footer {
+    padding: 20px;
+  }
+  footer .form-footer .suscript.form-foot {
+    width: 400px;
+    padding: 20px;
+    background-color: rgba(234, 104, 82, 0.15);
+  }
   footer .site-info p {
     width: 550px;
   }
+}
+
+article.single-article {
+  margin: 0;
+  padding: 0;
+  border-right: 0.5px solid #bbbbbb;
+}
+
+.post-single {
+  padding: 0;
+  margin-left: 100px;
+}
+
+.post-single .art-social {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.post-single .art-social .side-social {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  flex-wrap: nowrap;
+}
+
+.post-single .art-social .side-social .caja-social {
+  width: 20px;
+  text-align: center;
+}
+
+.post-single .art-social .side-social .caja-social i {
+  height: 30px;
+}
+
+.sidebar-single {
+  margin-right: 20px;
+}
+
+@media (min-width: 200px) {
+  article.contactanos {
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  article.contactanos .contact .box-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  article.contactanos .contact .box-contact .contacto {
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  article.contactanos .contact .box-contact .contacto form.contact-form {
+    width: 400px;
+    padding: 20px;
+  }
+  article.contactanos .contact .box-contact .contacto form.contact-form .in-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  article.contactanos .contact .box-contact .contacto form.contact-form .in-group input, article.contactanos .contact .box-contact .contacto form.contact-form .in-group textarea {
+    margin: auto 0;
+    background-color: #f4f4f4;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  article.contactanos .contact .box-contact .contacto form.contact-form {
+    width: 597px;
+    padding: 20px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Cormorant', serif;
+  font-size: 21px;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 0.03em;
+}
+
+* p {
+  line-height: 1.5em;
+}
+
+* h1, * h2, * h3, * h4, * ul, * li, * a, * br {
+  line-height: 1.2em;
+}
+
+html, body, h1, h2, h3, footer, header, a, p, article {
+  color: black;
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+.in-but button:hover {
+  color: #EA6852;
+}
+
+body h1 {
+  font-size: 32px;
+}
+
+body h2 {
+  font-size: 28px;
+}
+
+main a {
+  color: gray;
+  font-style: italic;
+}
+
+main a:hover {
+  color: #EA6852;
+  text-decoration: none;
+  transition: color 0.4s;
 }
 /*# sourceMappingURL=style_PDN.css.map */

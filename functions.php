@@ -18,7 +18,7 @@ add_theme_support( 'automatic-feed-links' );
 /*-----------------------------------------------------------------------------------*/
 
 // without parameter -> Post Thumbnail (as set by theme using set_post_thumbnail_size())
-the_post_thumbnail();
+//the_post_thumbnail();
 
 //the_post_thumbnail('thumbnail');       // Thumbnail (default 150px x 150px max)
 //the_post_thumbnail('medium');          // Medium resolution (default 300px x 300px max)
@@ -40,14 +40,16 @@ add_image_size( 'destacada-podcast', 227, 285, false);
 
 require get_template_directory() . '/includes/queries.php';
 
+
+
+
 /*-----------------------------------------------------------------------------------*/
 /* Register main menu for Wordpress use
 /*-----------------------------------------------------------------------------------*/
 register_nav_menus( 
 	array(
-		'primary'	=>	__( 'Primary Menu', 'PDN' ), // Register the Primary menu
-		// Copy and paste the line above right here if you want to make another menu, 
-		// just change the 'primary' to another name
+		'primary'	=>	__( 'Primary Menu', 'PDN' ),
+		'footer_menu'	=>	__( 'Footer Menu', 'PDN' ),
 	)
 );
 
@@ -103,7 +105,7 @@ function Bootstrap_scripts(){
 	wp_enqueue_style( 'normalize.css', 'https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css.map');
 	
 	wp_enqueue_script('jquiery', 'https://code.jquery.com/jquery-3.5.1.slim.min.js');
-	// wp_enqueue_script('popper-js', 'https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js');
+	wp_enqueue_script('popper-js', 'https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js');
 	wp_enqueue_script('bootstrap-js', 'https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js'); 
 }
 
@@ -128,7 +130,7 @@ add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
 
 function new_excerpt_more($more) {
     global $post;
-    return '... <a href="'. get_permalink($post->ID) . '">leer mas</a>.';
+    return '... <a href="'. get_permalink($post->ID) . '"> leer mas</a>.';
 }
 add_filter('excerpt_more', 'new_excerpt_more');
 

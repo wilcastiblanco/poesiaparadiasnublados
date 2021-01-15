@@ -35,8 +35,8 @@
 <!-- Header for Movile -->
 <header class="movil d-block d-md-none">
 	<div class="nav-top">
-		<a class="navbar-brand" href="#">
-			<img class="brand" src="<?php echo get_template_directory_uri(); ?>/img/Logo_PDN.svg">
+		<a class="navbar-brand" href="<?php the_permalink() ?>">
+		<?php the_custom_logo(); ?>
 		</a>
 		<div class="suscript">
 			<h3>Suscríbete a nuestra lista</h3>
@@ -66,6 +66,9 @@
 				<a href="#" class="">ARTÍCULOS</a>
 			</li>	
 		</ul>
+		<div class="nav-search">
+			<a href=""><i class="fas fa-search"></i></a>
+		</div>
 	</div>
 </header>
 
@@ -92,7 +95,9 @@
 		</div>
 	</div>
 	<div class="nav-button">
-		<ul class="nav" id="navId">
+	<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+
+		<!-- <ul class="nav" id="navId">
 			<li class="nav-item">
 				<a href="#tab1Id" class="btn nav-link active">INICIO<span class="sr-only">(current)</span></a>
 			</li>
@@ -102,7 +107,10 @@
 			<li class="nav-item">
 				<a href="#tab5Id" class="btn nav-link">ARTÍCULOS</a>
 			</li>	
-		</ul>
+		</ul> -->
+		<div class="nav-search">
+			<a href=""><i class="fas fa-search"></i></a>
+		</div>
 	</div>
 </header>
 

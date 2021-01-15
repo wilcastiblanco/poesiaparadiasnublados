@@ -1,24 +1,33 @@
 <div class="lastests">
+    soy lastest
     <h1>ULTIMAS ENTRADAS</h1>
     <div class="posts-container container">
 
-<?php if ( have_posts() ) : ?>
-    <?php while ( have_posts() ) : the_post(); ?>
+<?php 
+    $the_query = new WP_Query( array( 'posts_per_page' => 10,'offset' => 0 ) ); 
+    if ( have_posts() ) : ?>
+    <?php while ( $the_query -> have_posts() ) : $the_query -> the_post(); ?>
 
         <article class="post">
+            <hr class="division" style="border-style: solid; margin: 0px 10px 40px 10px"/>
             <div class="post-container">
-                <a class="d-block d-md-none" href="<?php the_permalink() ?>">
+                <a class="d-block d-md-none" href="<?php the_permalink() ?>" target=”_blank”>
                     <?php the_post_thumbnail('destacada-sm'); //Get the thumbnail to this post. ?>
                 </a>
                 <a class="d-none d-md-block" href="<?php the_permalink() ?>">
                     <?php the_post_thumbnail('destacada'); //Get the thumbnail to this post. ?>
                 </a>
                 <div class="text-post">
+                <?php if (!is_front_page()) : // Only if this page is NOT being used as a home page, display the title ?>
+
                     <h2 class="title">
                         <a href="<?php the_permalink(); // Get the link to this post ?>" title="<?php the_title(); ?>">
                             <?php the_title(); // Show the title of the posts as a link ?>
                         </a>
                     </h2>
+                
+                    <?php endif; ?>
+
                     <div class="post-meta">
                         <?php the_time('m/d/Y'); // Display the time published ?> | 
                         <?php if( comments_open() ) : // If we have comments open on this post, display a link and count of them ?>
@@ -29,7 +38,7 @@
                             </span>
                         <?php endif; ?>
                     
-                    </div><!--/post-meta -->
+                    </div><!--post-meta -->
                     
                     <div class="the-content">
                         <?php the_excerpt(); 
@@ -46,10 +55,10 @@
                         <div class="category"><?php echo get_the_category_list(); // Display the categories this post belongs to, as links ?>
                         </div>
                         <div class="tags"><?php echo get_the_tag_list( '| &nbsp;', '&nbsp;' ); // Display the tags this post has, as links separated by spaces and pipes ?></div>
-                    </div><!-- Meta -->
-                </div>
-            </div>
-            <hr class="division d-block d-md-none">
+                    </div><!-- categoria -->
+                </div><!-- text-post -->
+            </div> <!-- post-container -->
+            <hr class="division" style="border-style: solid; margin: 40px 10px 0px 10px"/>
         </article>
 
     <?php endwhile; // OK, let's stop the posts loop once we've exhausted our query/number of posts ?>
@@ -59,13 +68,6 @@
         <div class="past-page"><?php previous_posts_link( 'newer' ); // Display a link to  newer posts, if there are any, with the text 'newer' ?></div>
         <div class="next-page"><?php next_posts_link( 'older' ); // Display a link to  older posts, if there are any, with the text 'older' ?></div>
     </div><!-- pagination -->
-
-
-<?php else : // Well, if there are no posts to display and loop through, let's apologize to the reader (also your 404 error) ?>
-    
-    <article class="post error">
-        <h1 class="404">Nothing has been posted like that yet</h1>
-    </article>
 
 <?php endif; // OK, I think that takes care of both scenarios (having posts or not having any posts) ?>
 </div><!-- #content .site-content -->

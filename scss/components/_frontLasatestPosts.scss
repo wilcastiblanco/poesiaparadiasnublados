@@ -48,7 +48,7 @@
                 h2{
                     margin-top: 20px;
                     a{
-                        font-family: 'Cormorant Garamond', serif;
+                        font-family: 'Cormorant', serif;
                         color: black;
                         font-size: 28px;
                         &:hover{
@@ -59,11 +59,11 @@
                     } //a
                 } //h2
                 .post-meta{
-                    font-family: 'Cormorant Garamond', serif;
+                    font-family: 'Cormorant', serif;
                     font-style: italic;
                     font-weight: lighter;
                     #text{
-                        font-family: 'Cormorant Garamond', serif;
+                        font-family: 'Cormorant', serif;
                         font-style: italic;
                         font-weight: lighter;
                     }
@@ -73,7 +73,7 @@
                 p{
                     width: 100%;
                     margin-top: 20px;
-                    font-family: 'Cormorant Garamond', serif;
+                    font-family: 'Cormorant', serif;
                     font-style: italic;
                     font-weight: lighter;
                     font-size: 22px;
@@ -119,13 +119,12 @@
             article.post{
                 width: 505px;
                 height: 336;
-                margin: 20px;
                 &:nth-child(1){
                     width: 100%;
-                    hr.division{
-                        display: block;
-                        margin-top: 50px;
-                    }//hr.division
+                    // hr.division{
+                    //     display: block;
+                    //     margin-top: 50px;
+                    // }//hr.division
                     .post-container{
                         display: flex;
                         justify-content: center;
@@ -141,7 +140,7 @@
                 h2{
                     margin-top: 20px;
                     a{
-                        font-family: 'Cormorant Garamond', serif;
+                        font-family: 'Cormorant', serif;
                         color: black;
                         font-size: 28px;
                         &:hover{
@@ -152,11 +151,11 @@
                     } //a
                 } //h2
                 .post-meta{
-                    font-family: 'Cormorant Garamond', serif;
+                    font-family: 'Cormorant', serif;
                     font-style: italic;
                     font-weight: lighter;
                     #text{
-                        font-family: 'Cormorant Garamond', serif;
+                        font-family: 'Cormorant', serif;
                         font-style: italic;
                         font-weight: lighter;
                     }
@@ -166,7 +165,7 @@
                 p{
                     width: 100%;
                     margin-top: 20px;
-                    font-family: 'Cormorant Garamond', serif;
+                    font-family: 'Cormorant', serif;
                     font-style: italic;
                     font-weight: lighter;
                     font-size: 22px;
@@ -181,9 +180,9 @@
                 font-size: 22px;
                 line-height: 10px;
             }//a
-                hr.division{
-                    display: none;
-                }//hr.division
+                // hr.division{
+                //     display: none;
+                // }//hr.division
         }//.posts-container
 
     }//.lastests

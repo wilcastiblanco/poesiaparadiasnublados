@@ -1,9 +1,9 @@
 @media (min-width: $break-extrasmall){
 
     footer{
-        height: 656px;
-        line-height: 25px;
-        font-weight: lighter;
+        // height: 656px;
+        // line-height: 25px;
+        // font-weight: lighter;
         .form-footer{
             height: 448px;
             background-size: cover;
@@ -18,47 +18,57 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            ul{
-                display: flex;
-                justify-self: center;
-                li{
-                    padding: 0 20px;
-                    a{
-                        font-size: 20px;
-                        color: white;
+            .menu-footer-menu-container{
+                ul{
+                    display: flex;
+                    justify-self: center;
+                    li{
+                        a{
+                            color: white;
+                            padding: 20px;
+                            &:hover{
+                                color: #EA6852;
+                                text-decoration: none;
+                                transition: color 0.2s;
+                            }
+                        }
                     }
                 }
             }
             p{
                 width: 400px;
-                font-size: 22px;
                 text-align: center;
+                line-height: normal;
                 color: #EA6852;
             }
         }
         .foot{
             height: 42px;
+            padding: 5px;
             background-color: rgb(51, 51, 51);
             display: flex;
             justify-content: center;
-            color: white;
-            h5{
-                font-family: sans-serif;
-                font-weight: lighter;
-                font-size: 15px;
-                line-height: 50px;
+            p{
+                color: white;
                 img{
                     margin-bottom: 10px;
                 }
             }
         }
     }
-
 }
 
 
 @media screen and (min-width: $break-large){
     footer{
+        .form-footer{
+        padding: 20px;
+            .suscript.form-foot{
+                width: 400px;
+                padding: 20px;
+                background-color: rgba(234, 104, 82, 0.15) ;
+            }
+        }
         .site-info{
             p{
                 width: 550px;
@@ -66,3 +76,4 @@
         }
     }
 }
+
