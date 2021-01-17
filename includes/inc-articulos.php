@@ -1,9 +1,11 @@
 <div class="single-article">
     <div class="posts-container container">
-
+        
         <article class="post">
             <div class="row">
                 <div class="post-container col-11">
+                <hr class="division" style="border-style: solid; margin: 0px 10px 40px 10px"/>
+
                     <div class="row">
                         <?php 
                         $the_query = new WP_Query( array( 'posts_per_page' => 10,'offset' => 0 ) ); 
@@ -12,10 +14,10 @@
                             <?php while ( $the_query -> have_posts() ) : $the_query -> the_post(); ?>
                         <div class="articulo">
                             <a class="d-block d-md-none" href="<?php the_permalink() ?>" target=”_blank”>
-                                <?php the_post_thumbnail('destacada-sm'); ?>
+                                <?php the_post_thumbnail('destacada-sm2'); ?>
                             </a>
                             <a class="d-none d-md-block" href="<?php the_permalink() ?>">
-                                <?php the_post_thumbnail('destacada-sm'); //Get the thumbnail to this post. ?>
+                                <?php the_post_thumbnail('destacada-sm2'); //Get the thumbnail to this post. ?>
                             </a>
                             <div class="text-post">
     
@@ -28,8 +30,7 @@
                                 <?php endif; ?>
             
                                 <div class="post-meta">
-                                    <?php the_time('m/d/Y'); ?> | 
-                                    <?php the_author('archive'); ?>
+                                    <p> fecha: <?php the_time('m/d/Y'); ?> | Autor: <?php the_author('archive'); ?></p>
                                 </div><!-- post-meta -->
     
                                 <div class="the-excerpt">
@@ -49,6 +50,8 @@
                 
                     <?php endif; ?>
                     </div> <!-- row -->
+                    <hr class="division" style="border-style: solid; margin: 0px 10px 40px 10px"/>
+
                     </div> <!-- post-container -->
         
                     <div class="side-social col-1">

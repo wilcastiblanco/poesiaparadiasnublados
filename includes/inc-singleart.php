@@ -2,10 +2,9 @@
     <div class="posts-container container">
 
     <?php 
-    $the_query = new WP_Query( array( 'posts_per_page' => 1,'offset' => 0 ) ); 
     if ( have_posts() ) : ?>
 
-        <?php while ( $the_query -> have_posts() ) : $the_query -> the_post(); ?>
+        <?php while ( have_posts() ) : the_post(); ?>
 
             <article class="post">
                 <div class="row">
@@ -27,29 +26,25 @@
                             <?php endif; ?>
         
                             <div class="post-meta">
-                                <?php the_time('m/d/Y'); ?> | 
-                                <?php if( comments_open() ): ?>
-                                    <span class="comments-link">
-                                        <?php comments_popup_link( __( 'Comment', 'break' ), __( '1 Comment', 'break' ), __( '% Comments', 'break' ) ); ?>
-                                    </span>
-                                <?php endif; ?>
-                            </div><!-- post-meta -->
+                                    <p> fecha: <?php the_time('m/d/Y'); ?> | Autor: <?php the_author('archive'); ?></p>
+                                </div><!-- post-meta -->
 
                             <div class="the-excerpt">
                                 <?php the_excerpt() ?>
                             </div><!-- the-excerpt -->
+                            
+                            <div class="categoria d-flex mb-3">
+                                <hr class="mr-2" width="100%">
+                                <div class="category"><?php echo get_the_category_list(); // Display the categories this post belongs to, as links ?>
+                                </div>
+                                <div class="tags"><?php echo get_the_tag_list( '| &nbsp;', '&nbsp;' ); // Display the tags this post has, as links separated by spaces and pipes ?></div>
+                            </div><!-- categoria -->
 
                             <div class="the-content">
                                 <?php the_content(); ?>
                                 <?php wp_link_pages(); ?>
                             </div><!-- the-content -->
 
-                            <div class="categoria d-flex">
-                                <hr class="mr-2" width="100%">
-                                <div class="category"><?php echo get_the_category_list(); // Display the categories this post belongs to, as links ?>
-                                </div>
-                                <div class="tags"><?php echo get_the_tag_list( '| &nbsp;', '&nbsp;' ); // Display the tags this post has, as links separated by spaces and pipes ?></div>
-                            </div><!-- categoria -->
 
                         </div><!-- text-post -->
                     </div> <!-- post-container -->

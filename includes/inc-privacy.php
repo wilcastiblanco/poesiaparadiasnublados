@@ -1,40 +1,29 @@
+<div class="contenido-post col-11">
+<?php if ( have_posts() ) : ?>
+        <?php while ( have_posts() ) : the_post(); ?>
+            <?php the_post_thumbnail('destacada'); ?>
+            <h2 class="title"><?php the_title(); ?></h2>
 
-	<div id="primary" class="row-fluid">
-		soy just a page
-		<div id="content" role="main" class="span8 offset2">
-
-			<?php if ( have_posts() ) : 
-			// Do we have any posts/pages in the databse that match our query?
-			?>
-
-				<?php while ( have_posts() ) : the_post(); 
-				// If we have a page to show, start a loop that will display it
-				?>
-
-					<article class="post">
-					
-						<h1 class="title"><?php the_title(); // Display the title of the page ?></h1>
-						
-						<div class="the-content">
-							<?php the_content(); 
-							// This call the main content of the page, the stuff in the main text box while composing.
-							// This will wrap everything in p tags
-							?>
-							
-							<?php wp_link_pages(); // This will display pagination links, if applicable to the page ?>
-						</div><!-- the-content -->
-						
-					</article>
-
-				<?php endwhile; // OK, let's stop the page loop once we've displayed it ?>
-
-			<?php else : // Well, if there are no posts to display and loop through, let's apologize to the reader (also your 404 error) ?>
-				
-				<article class="post error">
-					<h1 class="404">Nothing posted yet</h1>
-				</article>
-
-			<?php endif; // OK, I think that takes care of both scenarios (having a page or not having a page to show) ?>
-
-		</div><!-- #content .site-content -->
-	</div><!-- #primary .content-area -->
+            <div class="the-content">
+                <?php the_content(); ?>
+                <?php wp_link_pages(); ?>
+			</div><!-- the-content -->
+			
+        <?php endwhile; ?> 
+        <?php
+        if ( comments_open() || '0' != get_comments_number() )
+        comments_template( '', true );
+        //Comentarios?>
+        <?php else : ?>
+        <div class="post error">
+            <h1 class="404">Nothing has been posted like that yet</h1>
+        </div><!-- /post error -->
+        <?php endif;?>
+    </div><!--/contenido-post -->
+<div class="side-social col-1">
+    <div class="caja-social">
+        <a href=""><i class="fab fa-facebook-f"></i></a>
+        <a href=""><i class="fab fa-instagram"></i></a>
+        <a href=""><i class="fab fa-spotify"></i></a>
+    </div>
+</div><!-- side-social -->
