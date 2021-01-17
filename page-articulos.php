@@ -5,10 +5,10 @@ Template Name: Archives
 
 define( 'WP_USE_THEMES', false ); get_header(); // This fxn gets the header.php file and renders it ?>
 <primary>
-	soy archive
+	soy single articulos
 	<main class="mt-5">
 		<div class="row">
-			<article class="post-single col-8">
+			<article class="box-main-article  main-art col-8">
 				<div class="art-social">
 					<?php include 'includes/inc-articulos.php';
 					//Incluye carousel?>
@@ -21,6 +21,7 @@ define( 'WP_USE_THEMES', false ); get_header(); // This fxn gets the header.php 
 	</main>
 <primary> <!-- end primay -->
 <?php get_footer(); ?>
+
 
 
 

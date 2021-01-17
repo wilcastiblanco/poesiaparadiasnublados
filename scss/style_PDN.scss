@@ -7,6 +7,7 @@
 @import "components/footer";
 @import "components/single";
 @import "components/contact";
+@import "components/articulos";
 
 
 // Extra small devices (portrait phones, less than 576px)
@@ -58,7 +59,9 @@ $mbreak-extralarge: 1200px;
         ul{
             li{
                 :hover{
-                    color: #EA6852
+                    color: #EA6852;
+                    text-decoration: none;
+                    transition: color 0.4s;
                 }
             }
         }
@@ -78,7 +81,19 @@ $mbreak-extralarge: 1200px;
     font-style: normal;
     letter-spacing: 0.03em;
     p{
-        line-height: 1.5em;
+        line-height: 1.3em;
+    }
+    h1{
+        font-size: 32px;
+        
+    }
+    h2{
+        font-size: 50px;
+        
+    }
+    h3{ 
+        font-size: 26px;
+        color: complement($color: #000000);
     }
     h1, h2, h3, h4, ul, li, a, br{
         line-height: 1.2em;
@@ -100,15 +115,9 @@ html, body, h1, h2, h3, footer, header, a, p, article{
     button{
         &:hover{
             color: #EA6852;
+            text-decoration: none;
+            transition: color 0.4s;
         }
-    }
-}
-body{
-    h1{
-        font-size: 32px;
-    }
-    h2{
-        font-size: 28px;
     }
 }
 main{
@@ -119,6 +128,24 @@ main{
             color: #EA6852;
             text-decoration: none;
             transition: color 0.4s;
+        }
+    }
+}
+
+// Sidebar styles
+.sidebar.sidebar-single{
+    h3{
+        font-size: 26px;
+        color: #EA6852;
+    }
+    ul{
+        li{
+            margin-bottom: 10px;
+            a{
+                font-size: 20px;
+                line-height: 1em;
+
+            }
         }
     }
 }
