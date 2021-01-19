@@ -21,8 +21,3 @@ define( 'WP_USE_THEMES', false ); get_header(); // This fxn gets the header.php 
 	</main>
 <primary> <!-- end primay -->
 <?php get_footer(); ?>
-
-
-
-
-

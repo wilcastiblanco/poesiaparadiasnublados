@@ -17,13 +17,13 @@
 @media (min-width: $break-extrasmall){
     .carousel{
         margin: 16px;
-        background-image: radial-gradient(48% 180%, #212121 44%, #232323 100%);
+        // background-image: radial-gradient(48% 180%, #212121 44%, #232323 100%);
         display: flex;
         flex-direction: column;
         justify-content: center;
         h1{
+            margin: 40px 0;
             text-align: center;
-            color: white;
         }
         .contenedor-titulo-controles{
             display: flex;
@@ -61,15 +61,14 @@
                     flex-direction: row;
                     justify-content: center;
                     .last-podcast{
-                        width: 227px;
+                        width: 277px;
+                        height: 277px;
                         margin: 10px;
                         transition: .6s ease all;
                         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-                        border-radius: 10px;
                         filter: brightness(0.8);
                         img{
                             vertical-align: top; 
-                            border-radius: 10px;
                         }
                     }
                     .last-podcast:hover{
@@ -94,13 +93,13 @@
 @media screen and (min-width: $break-medium){
     .carousel{
         margin: 16px;
-        background-image: radial-gradient(48% 180%, #212121 44%, #232323 100%);
+        // background-image: radial-gradient(48% 180%, #212121 44%, #232323 100%);
         display: flex;
         flex-direction: column;
         justify-content: center;
         h1{
             text-align: center;
-            color: white;
+            margin: 30px 0 10px 0;
         }
         .contenedor-titulo-controles{
             display: flex;
@@ -136,9 +135,11 @@
                 .carousel{
                     display: flex;
                     flex-direction: row;
-                    justify-content: center;
+                    justify-content: flex-start;
+                    margin-left: 0;
                     .last-podcast{
-                        width: 227px;
+                        width: 277px;
+                        height: 277px;
                         margin: 10px;
                         transition: .6s ease all;
                         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);

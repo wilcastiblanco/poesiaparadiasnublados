@@ -291,7 +291,6 @@ main a:hover {
 @media (min-width: 200px) {
   .carousel {
     margin: 16px;
-    background-image: radial-gradient(48% 180%, #212121 44%, #232323 100%);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -304,8 +303,8 @@ main a:hover {
             justify-content: center;
   }
   .carousel h1 {
+    margin: 40px 0;
     text-align: center;
-    color: white;
   }
   .carousel .contenedor-titulo-controles {
     display: -webkit-box;
@@ -375,19 +374,18 @@ main a:hover {
             justify-content: center;
   }
   .carousel .contenedor-principal .contenedor-carousel .carousel .last-podcast {
-    width: 227px;
+    width: 277px;
+    height: 277px;
     margin: 10px;
     -webkit-transition: .6s ease all;
     transition: .6s ease all;
     -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
             box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
     -webkit-filter: brightness(0.8);
             filter: brightness(0.8);
   }
   .carousel .contenedor-principal .contenedor-carousel .carousel .last-podcast img {
     vertical-align: top;
-    border-radius: 10px;
   }
   .carousel .contenedor-principal .contenedor-carousel .carousel .last-podcast:hover {
     -webkit-transform: scale(1.05);
@@ -418,7 +416,6 @@ main a:hover {
 @media screen and (min-width: 768px) {
   .carousel {
     margin: 16px;
-    background-image: radial-gradient(48% 180%, #212121 44%, #232323 100%);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -432,7 +429,7 @@ main a:hover {
   }
   .carousel h1 {
     text-align: center;
-    color: white;
+    margin: 30px 0 10px 0;
   }
   .carousel .contenedor-titulo-controles {
     display: -webkit-box;
@@ -497,12 +494,14 @@ main a:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-left: 0;
   }
   .carousel .contenedor-principal .contenedor-carousel .carousel .last-podcast {
-    width: 227px;
+    width: 277px;
+    height: 277px;
     margin: 10px;
     -webkit-transition: .6s ease all;
     transition: .6s ease all;
@@ -546,9 +545,7 @@ main a:hover {
   }
   .lastests h1 {
     text-align: center;
-    border-top: 0.5px solid #979797;
-    border-bottom: 0.5px solid #979797;
-    margin: 50px 0;
+    margin: 30px 0 25px 0;
   }
   .lastests .posts-container {
     display: -webkit-box;
@@ -655,9 +652,7 @@ main a:hover {
   }
   .lastests h1 {
     text-align: center;
-    border-top: 0.5px solid #979797;
-    border-bottom: 0.5px solid #979797;
-    margin: 50px 0;
+    margin: 30px 0 25px 0;
   }
   .lastests .posts-container {
     display: -webkit-box;

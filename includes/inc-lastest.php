@@ -1,5 +1,4 @@
 <div class="lastests">
-    soy lastest
     <h1>ULTIMAS ENTRADAS</h1>
     <div class="posts-container container">
 
