@@ -42,7 +42,9 @@ add_image_size( 'single-thumbnail', 813, 600, false);
 /* Consultas reutilizables
 /*-----------------------------------------------------------------------------------*/
 
-require get_template_directory() . '/includes/queries.php';
+require get_template_directory() . '/includes/query-carouselpodcasts.php';
+require get_template_directory() . '/includes/query-page-podcasts.php';
+require get_template_directory() . '/includes/query-single-podcast.php';
 
 
 
@@ -138,3 +140,16 @@ function new_excerpt_more($more) {
 }
 add_filter('excerpt_more', 'new_excerpt_more');
 
+
+//Muestra Custom post type en inxex
+
+function mostrar_post_type($query){
+	//Que no sea la pantalla de admin y que sea el query principal
+	if(!is_admin() && $query->is_main_query()){
+		//Que sea Home Page
+		if (is_single()) {
+			$query->set('post_type', array('post', 'podcasts') );
+		}
+	}
+}
+add_action( 'pre_get_posts', 'mostrar_post_type');

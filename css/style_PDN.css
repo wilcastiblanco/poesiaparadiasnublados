@@ -345,10 +345,11 @@ main a:hover {
     border: none;
     background-color: rgba(255, 255, 255, 0.3);
     font-size: 40;
-    border-radius: 50px;
+    border-radius: 60px;
     top: calc(50% - 25%);
-    line-height: 40px;
+    line-height: 35px;
     width: 50px;
+    height: 50px;
     color: black;
     z-index: 500;
     -webkit-transition: .2s ease all;
@@ -379,8 +380,6 @@ main a:hover {
     margin: 10px;
     -webkit-transition: .6s ease all;
     transition: .6s ease all;
-    -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
     -webkit-filter: brightness(0.8);
             filter: brightness(0.8);
   }
@@ -388,8 +387,8 @@ main a:hover {
     vertical-align: top;
   }
   .carousel .contenedor-principal .contenedor-carousel .carousel .last-podcast:hover {
-    -webkit-transform: scale(1.05);
-            transform: scale(1.05);
+    -webkit-transform: scale(1.01);
+            transform: scale(1.01);
     -webkit-transform-origin: center;
             transform-origin: center;
     -webkit-filter: brightness(1);
@@ -400,10 +399,11 @@ main a:hover {
     border: none;
     background-color: rgba(255, 255, 255, 0.3);
     font-size: 40;
-    border-radius: 50px;
+    border-radius: 60px;
     top: calc(50% - 25%);
-    line-height: 40px;
+    line-height: 35px;
     width: 50px;
+    height: 50px;
     color: black;
     z-index: 500;
     -webkit-transition: .2s ease all;
@@ -470,16 +470,17 @@ main a:hover {
     border: none;
     background-color: rgba(255, 255, 255, 0.3);
     font-size: 40;
-    border-radius: 50px;
+    border-radius: 60px;
     top: calc(50% - 25%);
-    line-height: 40px;
+    line-height: 35px;
     width: 50px;
+    height: 50px;
     color: black;
     z-index: 500;
     -webkit-transition: .2s ease all;
     transition: .2s ease all;
     left: 5px;
-    top: 120px;
+    top: 140px;
   }
   .carousel .contenedor-principal .contenedor-carousel {
     padding: 10px 0;
@@ -505,8 +506,6 @@ main a:hover {
     margin: 10px;
     -webkit-transition: .6s ease all;
     transition: .6s ease all;
-    -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
     -webkit-filter: brightness(0.8);
             filter: brightness(0.8);
   }
@@ -514,28 +513,31 @@ main a:hover {
     vertical-align: top;
   }
   .carousel .contenedor-principal .contenedor-carousel .carousel .last-podcast:hover {
-    -webkit-transform: scale(1.05);
-            transform: scale(1.05);
+    -webkit-transform: scale(1.01);
+            transform: scale(1.01);
     -webkit-transform-origin: center;
             transform-origin: center;
     -webkit-filter: brightness(1);
             filter: brightness(1);
+    -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
   }
   .carousel .contenedor-principal .flecha-derecha {
     position: absolute;
     border: none;
     background-color: rgba(255, 255, 255, 0.3);
     font-size: 40;
-    border-radius: 50px;
+    border-radius: 60px;
     top: calc(50% - 25%);
-    line-height: 40px;
+    line-height: 35px;
     width: 50px;
+    height: 50px;
     color: black;
     z-index: 500;
     -webkit-transition: .2s ease all;
     transition: .2s ease all;
     right: 5px;
-    top: 120px;
+    top: 140px;
   }
 }
 

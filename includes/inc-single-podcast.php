@@ -1,11 +1,11 @@
 <div class="single-article">
     <div class="posts-container container">
-    soy inc podcasts
+
     <?php 
     if ( have_posts() ) : ?>
 
         <?php while ( have_posts() ) : the_post(); ?>
-
+        soy inc-single-podcast
             <article class="post">
                 <div class="row">
                     <div class="post-container col-11">
@@ -13,7 +13,7 @@
                             <?php the_post_thumbnail('destacada-sm'); ?>
                         </a>
                         <a class="d-none d-md-block" href="<?php the_permalink() ?>">
-                            <?php the_post_thumbnail( 'single-thumbnail', array( 'class' => 'img-fluid' )); //Get the thumbnail to this post. ?>
+                            <?php the_post_thumbnail( 'destacada-sm', array( 'class' => 'img-fluid' )); //Get the thumbnail to this post. ?>
                         </a>
                         <div class="text-post">
 
@@ -29,9 +29,6 @@
                                     <p> fecha: <?php the_time('m/d/Y'); ?> | Autor: <?php the_author('archive'); ?></p>
                                 </div><!-- post-meta -->
 
-                            <div class="the-excerpt">
-                                <?php the_excerpt() ?>
-                            </div><!-- the-excerpt -->
                             
                             <div class="categoria d-flex mb-3">
                                 <hr class="mr-2" width="100%">
@@ -64,10 +61,5 @@
     <?php endif; ?>
 
     </div><!-- posts-container -->
-
-    <div id="pagination" class="clearfix">
-        <div class="btn btn-primary past-page"><?php previous_posts_link( 'newer' ); // Display a link to  newer posts, if there are any, with the text 'newer' ?></div>
-        <div class="btn btn-primary next-page"><?php next_posts_link( 'older' ); // Display a link to  older posts, if there are any, with the text 'older' ?></div>
-    </div><!-- pagination -->
 
 </div> <!-- single-article -->
