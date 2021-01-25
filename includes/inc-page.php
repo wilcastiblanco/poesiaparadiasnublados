@@ -1,5 +1,5 @@
 <div class="single-article">
-inc-single poscast.php
+inc-page.php
     <div class="posts-container container">
         
         <article class="post">
@@ -10,15 +10,15 @@ inc-single poscast.php
                         <?php if ( have_posts() ) : while (have_posts()): the_post(); ?>
 
                             <?php $args = array(
-                                'post_type' => 'podcast',
-                                'post_per_page' => 1,
+                                'post_type' => 'post',
+                                'post_per_page' => 10,
                                 'order' => 'ACS',
                                 'order' => 'title',
                             ); ?>
                     <div class="row">
                     
-                            <?php $query2 = new WP_Query($args); ?>
-                            <?php while ( $query2 -> have_posts() ) : $query2 -> the_post(); ?>
+                            <?php $query1 = new WP_Query($args); ?>
+                            <?php while ( $query1 -> have_posts() ) : $query1 -> the_post(); ?>
                             <div class="articulo">
                             <a class="d-block d-md-none" href="<?php the_permalink() ?>" target=”_blank”>
                                 <?php the_post_thumbnail('destacada-sm2'); ?>

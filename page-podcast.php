@@ -1,16 +1,18 @@
-<?php 
+<?php
 /**
  * The template for displaying any single page.
  *
  */
-define( 'WP_USE_THEMES', false ); get_header(); // This fxn gets the header.php file and renders it ?>
+
+define( 'WP_USE_THEMES', false ); get_header(); ?>
 <primary>
-	soy page podcasts
+page-podcasts.php
 	<main class="mt-5">
 		<div class="row">
 			<article class="box-main-article  main-art col-8">
 				<div class="art-social">
-				<?php PDN_page_podcasts_post_types(); ?>
+					<?php include 'includes/inc-page-podcast.php';
+					//Incluye carousel?>
 				</div>
 			</article><!-- article -->
 			<div class="sidebar sidebar-single col-2">

@@ -158,14 +158,19 @@
                 margin: 10px;
                 ul{
                     display: flex;
-                    a{
-                        color: black;
-                        margin-right: 20px;
-                        font-size: 16px;
-                        &:hover{
-                            color: #EA6852;
-                            text-decoration: none;
-                            transition: color 0.2s;
+                    li{
+                        display: flex;
+                        flex-wrap: nowrap;
+                        a{
+                            color: black;
+                            margin-right: 20px;
+                            font-size: 16px;
+                            font-weight: bold;
+                            &:hover{
+                                color: #EA6852;
+                                text-decoration: none;
+                                transition: color 0.2s;
+                            }
                         }
                     }
                 }
@@ -174,8 +179,11 @@
                 width: 20px;
                 height: 20px;
                 margin: 10px;
-                i{
-                    color: gray;
+                display: flex;
+                a{
+                    i{
+                        color: gray;
+                    }
                 }
             }
         }

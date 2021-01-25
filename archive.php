@@ -5,7 +5,7 @@ Template Name: Archives
 
 define( 'WP_USE_THEMES', false ); get_header(); // This fxn gets the header.php file and renders it ?>
 <primary>
-	soy single articulos
+	archive.php
 	<main class="mt-5">
 		<div class="row">
 			<article class="box-main-article  main-art col-8">

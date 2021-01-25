@@ -1,3 +1,4 @@
+
 <?php 
 /**
  * 	Template Name: Contact
@@ -5,7 +6,7 @@
 */
 get_header(); ?>
 <primary>
-    soy contacto
+    contacto.php
 	<main>
 
         <?php if ( have_posts() ) : ?>

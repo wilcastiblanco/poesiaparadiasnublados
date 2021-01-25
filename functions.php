@@ -42,9 +42,9 @@ add_image_size( 'single-thumbnail', 813, 600, false);
 /* Consultas reutilizables
 /*-----------------------------------------------------------------------------------*/
 
-require get_template_directory() . '/includes/query-carouselpodcasts.php';
-require get_template_directory() . '/includes/query-page-podcasts.php';
-require get_template_directory() . '/includes/query-single-podcast.php';
+// require get_template_directory() . '/includes/query-carousel-podcasts.php';
+// require get_template_directory() . '/includes/query-page-podcasts.php';
+// require get_template_directory() . '/includes/query-single-podcast.php';
 
 
 
@@ -54,8 +54,8 @@ require get_template_directory() . '/includes/query-single-podcast.php';
 /*-----------------------------------------------------------------------------------*/
 register_nav_menus( 
 	array(
-		'primary'	=>	__( 'Primary Menu', 'PDN' ),
-		'footer_menu'	=>	__( 'Footer Menu', 'PDN' ),
+		'primary'	=>	__( 'Primary Menu', 'pdn' ),
+		'footer_menu'	=>	__( 'Footer Menu', 'pdn' ),
 	)
 );
 
@@ -129,27 +129,27 @@ add_action( 'wp_enqueue_scripts', 'Bootstrap_scripts' ); // Register this fxn an
 //  * @param int $length Excerpt length.
 //  * @return int (Maybe) modified excerpt length.
 //  */
-function wpdocs_custom_excerpt_length( $length ) {
-    return 20;
-}
-add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
+// function wpdocs_custom_excerpt_length( $length ) {
+//     return 20;
+// }
+// add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
 
-function new_excerpt_more($more) {
-    global $post;
-    return '... <a href="'. get_permalink($post->ID) . '"> leer mas</a>.';
-}
-add_filter('excerpt_more', 'new_excerpt_more');
+// function new_excerpt_more($more) {
+//     global $post;
+//     return '... <a href="'. get_permalink($post->ID) . '"> leer mas</a>.';
+// }
+// add_filter('excerpt_more', 'new_excerpt_more');
 
 
 //Muestra Custom post type en inxex
 
-function mostrar_post_type($query){
-	//Que no sea la pantalla de admin y que sea el query principal
-	if(!is_admin() && $query->is_main_query()){
-		//Que sea Home Page
-		if (is_single()) {
-			$query->set('post_type', array('post', 'podcasts') );
-		}
-	}
-}
-add_action( 'pre_get_posts', 'mostrar_post_type');
+// function mostrar_post_type($clases){
+// 	//Que no sea la pantalla de admin y que sea el query principal
+// 	if(!is_admin() && $clases->is_main_query()){
+// 		//Que sea Home Page
+// 		if (is_home() && ! is_front_page()) {
+// 			$query->set('post_type', array('post', 'podcasts') );
+// 		}
+// 	}
+// }
+// add_action( 'pre_get_posts', 'mostrar_post_type');

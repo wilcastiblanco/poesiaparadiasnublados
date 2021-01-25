@@ -1,5 +1,5 @@
 <div class="single-article">
-inc-single poscast.php
+inc-page-podcasts.php
     <div class="posts-container container">
         
         <article class="post">
@@ -9,12 +9,12 @@ inc-single poscast.php
 
                         <?php if ( have_posts() ) : while (have_posts()): the_post(); ?>
 
-                            <?php $args = array(
-                                'post_type' => 'podcast',
-                                'post_per_page' => 1,
-                                'order' => 'ACS',
-                                'order' => 'title',
-                            ); ?>
+                        <?php $args = array (
+								'post_type' => 'podcasts',
+								'posts_per_page' => 10,
+								'order' => 'ACS',
+								'order' => 'title',
+							);  ?>
                     <div class="row">
                     
                             <?php $query2 = new WP_Query($args); ?>
@@ -28,13 +28,13 @@ inc-single poscast.php
                             </a>
                             <div class="text-post">
     
-                                <?php if (!is_front_page()) : ?>
+                                <?php //if (!is_front_page()) : ?>
                                     <h2 class="title">
                                         <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
                                             <?php the_title(); ?>
                                         </a>
                                     </h2>
-                                <?php endif; ?>
+                                <?php //endif; ?>
             
                                 <div class="post-meta">
                                     <p> fecha: <?php the_time('m/d/Y'); ?> | Autor: <?php the_author('archive'); ?></p>

@@ -1,4 +1,5 @@
 <div class="contenido-post col-11">
+inc-privacy.php
 <?php if ( have_posts() ) : ?>
         <?php while ( have_posts() ) : the_post(); ?>
             <?php the_post_thumbnail('destacada'); ?>

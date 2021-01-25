@@ -54,8 +54,6 @@ $mbreak-extralarge: 1200px;
         }
 }
 
-
-
 *{
     margin: 0;
     padding: 0;
@@ -63,7 +61,6 @@ $mbreak-extralarge: 1200px;
     list-style: none;
     text-decoration: none;
 }
-
 
 //Inicio código
 
@@ -81,6 +78,10 @@ body{
     }
     h2{
         font-size: 28px;
+        a{
+            font-weight: 500;
+            font-style: normal;
+        }
     }
 }
 main{

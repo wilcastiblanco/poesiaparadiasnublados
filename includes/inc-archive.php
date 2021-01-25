@@ -1,4 +1,5 @@
 <div class="single-article">
+inc-archive.php
     <div class="posts-container container">
         
         <article class="post">

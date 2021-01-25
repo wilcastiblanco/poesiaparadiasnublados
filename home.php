@@ -9,7 +9,7 @@
 get_header(); // This fxn gets the header.php file and renders it ?>
 <primary>
 	<main>
-		soy page home
+	page-home.php
 		<?php include 'includes/inc-carousel.php';
 			//Incluye carousel
 		?>

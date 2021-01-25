@@ -1,7 +1,7 @@
 <div class="lastests">
-    <h1>ULTIMAS ENTRADAS</h1>
+    <h1>ULTIMOS ARTÍCULOS</h1>
     <div class="posts-container container">
-
+    inc-lastest.php  
     <?php 
         $the_query = new WP_Query( array( 'posts_per_page' => 10,'offset' => 0 ) ); 
         if ( have_posts() ) : ?>

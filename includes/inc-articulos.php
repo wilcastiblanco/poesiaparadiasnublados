@@ -1,4 +1,5 @@
 <div class="single-article">
+inc-articulos
     <div class="posts-container container">
         
         <article class="post">
@@ -8,10 +9,10 @@
 
                     <div class="row">
                         <?php 
-                        $the_query = new WP_Query( array( 'posts_per_page' => 10,'offset' => 0 ) ); 
+                        $query1 = new WP_Query( array( 'posts_per_page' => 10,'offset' => 0 ) ); 
                         if ( have_posts() ) : ?>
                     
-                            <?php while ( $the_query -> have_posts() ) : $the_query -> the_post(); ?>
+                            <?php while ( $query1 -> have_posts() ) : $query1 -> the_post(); ?>
                         <div class="articulo">
                             <a class="d-block d-md-none" href="<?php the_permalink() ?>" target=”_blank”>
                                 <?php the_post_thumbnail('destacada-sm2'); ?>
