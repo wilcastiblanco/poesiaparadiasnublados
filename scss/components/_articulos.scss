@@ -45,6 +45,7 @@
                 .caja-social{
                     width: 20px;
                     text-align: center;
+                    margin-right: 10px;
                     i{
                         height: 30px;
                     }
@@ -118,12 +119,13 @@
                     padding: 5px;
                     display: flex;
                     flex-direction: row;
-                    justify-content: flex-start;
+                    justify-content: flex-end;
                     align-items: flex-start;
                     flex-wrap: nowrap;
                     .caja-social{
                         width: 20px;
                         text-align: center;
+                        margin-right: 10px;
                         i{
                             height: 30px;
                         }

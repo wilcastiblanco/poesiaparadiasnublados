@@ -769,6 +769,61 @@ main a:hover {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    padding: 20px;
+  }
+  footer .form-footer .suscript {
+    width: 550px;
+    height: 50px;
+    background-color: rgba(234, 104, 82, 0.15);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .form-footer .suscript h3 {
+    font-size: 20px;
+    line-height: 18px;
+    margin: 10px;
+  }
+  footer .form-footer .suscript form .in-but {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  footer .form-footer .suscript form .in-but button {
+    line-height: 1px;
+    background-color: #EA6852;
+    color: white;
+  }
+  footer .form-footer .suscript form .in-but button:hover {
+    background-color: #EA6852;
+    color: white;
+    -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.358);
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.358);
+    -webkit-transition: 2, 2, all, ease;
+    transition: 2, 2, all, ease;
+  }
+  footer .form-footer .suscript form input {
+    width: 213px;
+    height: 32px;
+    border-radius: 0;
+    line-height: 20px;
+    font-family: 'Cormorant', serif;
+    font-style: italic;
+    font-size: 19px;
+    margin-right: 10px;
+  }
+  footer .form-footer .suscript form button {
+    line-height: 20px;
+    font-family: 'Cormorant', serif;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 16px;
   }
   footer .site-info {
     height: 168px;
@@ -829,20 +884,6 @@ main a:hover {
   }
 }
 
-@media screen and (min-width: 992px) {
-  footer .form-footer {
-    padding: 20px;
-  }
-  footer .form-footer .suscript.form-foot {
-    width: 400px;
-    padding: 20px;
-    background-color: rgba(234, 104, 82, 0.15);
-  }
-  footer .site-info p {
-    width: 550px;
-  }
-}
-
 h1.title {
   margin: 30px 0;
 }
@@ -863,10 +904,10 @@ h1.title a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
@@ -877,16 +918,16 @@ h1.title a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
 }
@@ -894,14 +935,11 @@ h1.title a {
 .box-main-article.single-art .art-social .side-social .caja-social {
   width: 20px;
   text-align: center;
+  margin-right: 10px;
 }
 
 .box-main-article.single-art .art-social .side-social .caja-social i {
   height: 30px;
-}
-
-.sidebar-single {
-  margin-right: 20px;
 }
 
 @media (min-width: 200px) {
@@ -1029,6 +1067,7 @@ h1.title a {
   .box-main-article.main-art .art-social .side-social .caja-social {
     width: 20px;
     text-align: center;
+    margin-right: 10px;
   }
   .box-main-article.main-art .art-social .side-social .caja-social i {
     height: 30px;
@@ -1123,9 +1162,9 @@ h1.title a {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
@@ -1135,6 +1174,7 @@ h1.title a {
   .box-main-article.main-art .art-social .side-social .caja-social {
     width: 20px;
     text-align: center;
+    margin-right: 10px;
   }
   .box-main-article.main-art .art-social .side-social .caja-social i {
     height: 30px;
@@ -1203,6 +1243,13 @@ main a:hover {
   text-decoration: none;
   -webkit-transition: color 0.4s;
   transition: color 0.4s;
+}
+
+.sidebar.sidebar-single {
+  border-left: solid;
+  border-width: 0.5px;
+  border-color: #cdcdcd;
+  padding-left: 20px;
 }
 
 .sidebar.sidebar-single h3 {

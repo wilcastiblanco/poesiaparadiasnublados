@@ -14,26 +14,23 @@ h1.title{
     font-size: 38px;
     .art-social{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: flex-start;
         .side-social{
             padding: 5px;
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             justify-content: flex-start;
-            align-items: flex-end;
+            align-items: flex-start;
             flex-wrap: nowrap;
             .caja-social{
                 width: 20px;
                 text-align: center;
+                margin-right: 10px;
                 i{
                     height: 30px;
                 }
-
             }
-        }
+        } // .side-social
     }
-}
-.sidebar-single{
-    margin-right: 20px;
 }
