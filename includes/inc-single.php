@@ -1,6 +1,5 @@
 <div class="single-article">
     <div class="posts-container container">
-    inc-single.php
     <?php 
     if ( have_posts() ) : ?>
 

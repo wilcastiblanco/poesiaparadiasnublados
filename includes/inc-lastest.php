@@ -1,7 +1,6 @@
 <div class="lastests">
     <h1>ULTIMOS ARTÍCULOS</h1>
     <div class="posts-container container">
-    inc-lastest.php  
     <?php 
         $the_query = new WP_Query( array( 'posts_per_page' => 10,'offset' => 0 ) ); 
         if ( have_posts() ) : ?>
@@ -17,7 +16,7 @@
                         <?php the_post_thumbnail('destacada'); ?>
                     </a>
                     <div class="text-post">
-                    <?php if (!is_front_page()) : ?>
+                    <?php if (is_front_page()) : ?>
 
                         <h2 class="title">
                             <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">

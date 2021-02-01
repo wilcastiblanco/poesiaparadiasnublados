@@ -1,8 +1,6 @@
-
 <div class="carousel">
 	<div class="ultimos-podcasts contenedor">
 		<div class="contenedor-titulo-controles">
-inc-carousel.php
 			<h1>PODCASTS RECIENTES</h1>
 			<div class="indicadores">
 			</div>

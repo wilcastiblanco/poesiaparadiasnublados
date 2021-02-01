@@ -763,125 +763,197 @@ main a:hover {
   }
 }
 
-@media (min-width: 200px) {
-  footer .form-footer {
-    height: 448px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 20px;
-  }
-  footer .form-footer .suscript {
-    width: 550px;
-    height: 50px;
-    background-color: rgba(234, 104, 82, 0.15);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  footer .form-footer .suscript h3 {
-    font-size: 20px;
-    line-height: 18px;
-    margin: 10px;
-  }
-  footer .form-footer .suscript form .in-but {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  footer .form-footer .suscript form .in-but button {
-    line-height: 1px;
-    background-color: #EA6852;
-    color: white;
-  }
-  footer .form-footer .suscript form .in-but button:hover {
-    background-color: #EA6852;
-    color: white;
-    -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.358);
-            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.358);
-    -webkit-transition: 2, 2, all, ease;
-    transition: 2, 2, all, ease;
-  }
-  footer .form-footer .suscript form input {
-    width: 213px;
-    height: 32px;
-    border-radius: 0;
-    line-height: 20px;
-    font-family: 'Cormorant', serif;
-    font-style: italic;
-    font-size: 19px;
-    margin-right: 10px;
-  }
-  footer .form-footer .suscript form button {
-    line-height: 20px;
-    font-family: 'Cormorant', serif;
-    font-style: italic;
-    font-weight: 600;
-    font-size: 16px;
-  }
-  footer .site-info {
-    height: 168px;
-    width: 100%;
-    background-color: black;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  footer .site-info .menu-footer-menu-container ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    justify-self: center;
-  }
-  footer .site-info .menu-footer-menu-container ul li a {
-    color: white;
-    padding: 20px;
-  }
-  footer .site-info .menu-footer-menu-container ul li a:hover {
-    color: #EA6852;
-    text-decoration: none;
-    -webkit-transition: color 0.2s;
-    transition: color 0.2s;
-  }
-  footer .site-info p {
-    width: 400px;
-    text-align: center;
-    line-height: normal;
-    color: #EA6852;
-  }
-  footer .foot {
-    height: 42px;
-    padding: 5px;
-    background-color: #333333;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  footer .foot p {
-    color: white;
-  }
-  footer .foot p img {
-    margin-bottom: 10px;
-  }
+footer .form-footer {
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px;
+}
+
+footer .form-footer .suscript {
+  width: 550px;
+  height: 50px;
+  background-color: rgba(234, 104, 82, 0.15);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .form-footer .suscript h3 {
+  font-size: 20px;
+  line-height: 18px;
+  margin: 10px;
+}
+
+footer .form-footer .suscript form .in-but {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .form-footer .suscript form .in-but button {
+  line-height: 1px;
+  background-color: #EA6852;
+  color: white;
+}
+
+footer .form-footer .suscript form .in-but button:hover {
+  background-color: #EA6852;
+  color: white;
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.358);
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.358);
+  -webkit-transition: 2, 2, all, ease;
+  transition: 2, 2, all, ease;
+}
+
+footer .form-footer .suscript form input {
+  width: 213px;
+  height: 32px;
+  border-radius: 0;
+  line-height: 20px;
+  font-family: 'Cormorant', serif;
+  font-style: italic;
+  font-size: 19px;
+  margin-right: 10px;
+}
+
+footer .form-footer .suscript form button {
+  line-height: 20px;
+  font-family: 'Cormorant', serif;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+footer .site-info {
+  height: 190px;
+  width: 100%;
+  padding: 20px;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .site-info .menu-footer-menu-container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .site-info .menu-footer-menu-container ul li a {
+  color: white;
+  padding: 20px;
+}
+
+footer .site-info .menu-footer-menu-container ul li a:hover {
+  color: #EA6852;
+  text-decoration: none;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+footer .site-info p {
+  width: 400px;
+  text-align: center;
+  line-height: normal;
+  color: #EA6852;
+}
+
+footer .foot {
+  height: 42px;
+  padding: 5px;
+  background-color: #333333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .foot p {
+  color: white;
+}
+
+footer .foot p img {
+  margin-bottom: 10px;
+}
+
+.page-podcast .podcast-container .articulo {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.page-podcast .podcast-container .articulo a {
+  height: 370px;
+}
+
+.page-podcast .podcast-container .articulo .text-post {
+  width: 500px;
+}
+
+.page-podcast .podcast-container .articulo .text-post h2 {
+  margin-top: 0;
+}
+
+.page-podcast .podcast-container .articulo .text-post h2 a {
+  color: black;
+  font-size: 26px;
+  line-height: -10px;
+}
+
+.page-podcast .podcast-container .articulo .text-post h2 a:hover {
+  color: #EA6852;
+  text-decoration: none;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.page-podcast .podcast-container .articulo .text-post h2 a br {
+  margin: 0;
+}
+
+.page-podcast .podcast-container .articulo .text-post h2 a small {
+  color: gray;
+  font-style: italic;
+  line-height: 0;
+}
+
+.page-podcast .podcast-container .articulo hr.division {
+  display: block;
+  margin-top: 50px;
 }
 
 h1.title {

@@ -1,5 +1,4 @@
 <div class="single-article">
-inc-articulos
     <div class="posts-container container">
         
         <article class="post">

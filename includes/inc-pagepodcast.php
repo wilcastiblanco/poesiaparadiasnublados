@@ -1,10 +1,8 @@
-<div class="single-article">
-inc-pagepodcast.php
-    <div class="posts-container container">
-        
-        <article class="post">
+<div class="page-podcast">
+    <div class="podcasts-container container">
+        <article class="article-podcast">
             <div class="row">
-                <div class="post-container col-11">
+                <div class="podcast-container col-11">
                 <hr class="division" style="border-style: solid; margin: 0px 10px 40px 10px"/>
 
                         <?php if ( have_posts() ) : while (have_posts()): the_post(); ?>
@@ -21,10 +19,10 @@ inc-pagepodcast.php
                             <?php while ( $query2 -> have_posts() ) : $query2 -> the_post(); ?>
                             <div class="articulo">
                             <a class="d-block d-md-none" href="<?php the_permalink() ?>" target=”_blank”>
-                                <?php the_post_thumbnail('destacada-sm2'); ?>
+                                <?php the_post_thumbnail('podcast'); ?>
                             </a>
                             <a class="d-none d-md-block" href="<?php the_permalink() ?>">
-                                <?php the_post_thumbnail('destacada-sm2'); //Get the thumbnail to this post. ?>
+                                <?php the_post_thumbnail('podcast'); //Get the thumbnail to this post. ?>
                             </a>
                             <div class="text-post">
     
@@ -36,23 +34,21 @@ inc-pagepodcast.php
                                     </h2>
                                 <?php //endif; ?>
             
-                                <div class="post-meta">
+                                <!-- <div class="post-meta">
                                     <p> fecha: <?php the_time('m/d/Y'); ?> | Autor: <?php the_author('archive'); ?></p>
-                                </div><!-- post-meta -->
+                                </div>post-meta -->
     
                                 <div class="the-excerpt">
                                     <?php the_excerpt() ?>
                                 </div><!-- the-excerpt -->
     
                                 <div class="categoria d-flex">
-                                    <hr class="mr-2" width="100%">
-                                    <div class="category"><?php echo get_the_category_list(); // Display the categories this post belongs to, as links ?>
-                                    </div>
                                     <div class="tags"><?php echo get_the_tag_list( '| &nbsp;', '&nbsp;' ); // Display the tags this post has, as links separated by spaces and pipes ?></div>
                                 </div><!-- categoria -->
-    
+                                
                             </div><!-- text-post -->
                         </div>
+                        <hr class="" width="100%">
                         <?php endwhile; wp_reset_postdata(); ?>
                     </div> <!-- row -->
                         <?php endwhile;?>

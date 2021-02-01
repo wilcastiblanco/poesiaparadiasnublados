@@ -6,9 +6,7 @@
 */
 get_header(); ?>
 <primary>
-    contacto.php
 	<main>
-
         <?php if ( have_posts() ) : ?>
             <?php while ( have_posts() ) : the_post(); ?>
 

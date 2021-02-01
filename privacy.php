@@ -2,14 +2,12 @@
 /*
 Template Name: Privacy
 */
-
-
-define( 'WP_USE_THEMES', false ); get_header(); // This fxn gets the header.php file and renders it ?>
+define( 'WP_USE_THEMES', false ); get_header(); ?>
 <primary>
 	<main class="mt-5">
 		<div class="row">
-			<article class="box-main-article single-art col-8">
-				<div class="art-social container">
+			<article class="box-main-article  main-art col-8">
+				<div class="art-social">
 					<?php include 'includes/inc-privacy.php';
 					//Incluye carousel?>
 				</div>
@@ -21,4 +19,3 @@ define( 'WP_USE_THEMES', false ); get_header(); // This fxn gets the header.php 
 	</main>
 <primary> <!-- end primay -->
 <?php get_footer(); ?>
-

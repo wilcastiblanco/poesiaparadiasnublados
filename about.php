@@ -5,7 +5,6 @@
 */
 get_header(); ?>
 <primary>
-    soy about
 	<main class="container">
 
         <?php if ( have_posts() ) : ?>

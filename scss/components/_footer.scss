@@ -1,105 +1,100 @@
-@media (min-width: $break-extrasmall){
-
-    footer{
-        // height: 656px;
-        // line-height: 25px;
-        // font-weight: lighter;
-        .form-footer{
-            height: 448px;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            padding: 20px;
-            .suscript{
-                width: 550px;
-                height: 50px;
-                background-color: rgba(234, 104, 82, 0.15);
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                h3{
-                    font-size: 20px;
-                    line-height: 18px;
-                    margin: 10px;
-                }
-                form{
-                    .in-but{
-                        display: flex;
-                        button{
-                            line-height: 1px;
-                            background-color: #EA6852;
-                            color: white;
-                            &:hover{
-                                background-color: #EA6852;
-                                color: white;
-                                box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.358);
-                                transition: 2, 2, all, ease;
-                            }
-                        }
-                    }
-                    input{
-                        width: 213px;
-                        height: 32px;
-                        border-radius: 0;
-                        line-height: 20px;
-                        font-family: 'Cormorant', serif;
-                        font-style: italic;
-                        font-size: 19px;
-                        margin-right: 10px;
-                    }
-                    button{
-                        line-height: 20px;
-                        font-family: 'Cormorant', serif;
-                        font-style: italic;
-                        font-weight: 600;
-                        font-size: 16px;
-                    }
-                }
-            }
-        }
-        .site-info{
-            height: 168px;
-            width: 100%;
-            background-color: black;
+footer{
+    .form-footer{
+        height: 500px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 20px;
+        .suscript{
+            width: 550px;
+            height: 50px;
+            background-color: rgba(234, 104, 82, 0.15);
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
-            .menu-footer-menu-container{
-                ul{
+            h3{
+                font-size: 20px;
+                line-height: 18px;
+                margin: 10px;
+            }
+            form{
+                .in-but{
                     display: flex;
-                    justify-self: center;
-                    li{
-                        a{
+                    button{
+                        line-height: 1px;
+                        background-color: #EA6852;
+                        color: white;
+                        &:hover{
+                            background-color: #EA6852;
                             color: white;
-                            padding: 20px;
-                            &:hover{
-                                color: #EA6852;
-                                text-decoration: none;
-                                transition: color 0.2s;
-                            }
+                            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.358);
+                            transition: 2, 2, all, ease;
+                        }
+                    }
+                }
+                input{
+                    width: 213px;
+                    height: 32px;
+                    border-radius: 0;
+                    line-height: 20px;
+                    font-family: 'Cormorant', serif;
+                    font-style: italic;
+                    font-size: 19px;
+                    margin-right: 10px;
+                }
+                button{
+                    line-height: 20px;
+                    font-family: 'Cormorant', serif;
+                    font-style: italic;
+                    font-weight: 600;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .site-info{
+        height: 190px;
+        width: 100%;
+        padding: 20px;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .menu-footer-menu-container{
+            ul{
+                display: flex;
+                justify-content: center;
+                li{
+                    a{
+                        color: white;
+                        padding: 20px;
+                        &:hover{
+                            color: #EA6852;
+                            text-decoration: none;
+                            transition: color 0.2s;
                         }
                     }
                 }
             }
-            p{
-                width: 400px;
-                text-align: center;
-                line-height: normal;
-                color: #EA6852;
-            }
         }
-        .foot{
-            height: 42px;
-            padding: 5px;
-            background-color: rgb(51, 51, 51);
-            display: flex;
-            justify-content: center;
-            p{
-                color: white;
-                img{
-                    margin-bottom: 10px;
-                }
+        p{
+            width: 400px;
+            text-align: center;
+            line-height: normal;
+            color: #EA6852;
+        }
+    }
+    .foot{
+        height: 42px;
+        padding: 5px;
+        background-color: rgb(51, 51, 51);
+        display: flex;
+        justify-content: center;
+        p{
+            color: white;
+            img{
+                margin-bottom: 10px;
             }
         }
     }
