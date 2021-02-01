@@ -1,17 +1,16 @@
 <?php
-/**
- * The template for displaying any single page.
- *
- */
+/*
+* The template for displaying all pages
+*/
 
 define( 'WP_USE_THEMES', false ); get_header(); ?>
 <primary>
-page-podcasts.php
+page-podcast.php
 	<main class="mt-5">
 		<div class="row">
 			<article class="box-main-article  main-art col-8">
 				<div class="art-social">
-					<?php include 'includes/inc-page-podcast.php';
+					<?php include 'includes/inc-pagepodcast.php';
 					//Incluye carousel?>
 				</div>
 			</article><!-- article -->

@@ -1,15 +1,15 @@
 <?php
 /**
- * The template for displaying any single post.
+ * The template for displaying all single posts
  *
  */
 
-define( 'WP_USE_THEMES', false ); get_header(); // This fxn gets the header.php file and renders it ?>
+define( 'WP_USE_THEMES', false ); get_header(); ?>
 <primary>
 single.php
 	<main class="mt-5">
 		<div class="row">
-			<article class="box-main-article single-art col-8">
+			<article class="box-main-article  main-art col-8">
 				<div class="art-social">
 					<?php include 'includes/inc-single.php';
 					//Incluye carousel?>

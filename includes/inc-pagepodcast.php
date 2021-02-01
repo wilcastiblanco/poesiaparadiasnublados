@@ -1,5 +1,5 @@
 <div class="single-article">
-inc-page-podcasts.php
+inc-pagepodcast.php
     <div class="posts-container container">
         
         <article class="post">
@@ -10,7 +10,7 @@ inc-page-podcasts.php
                         <?php if ( have_posts() ) : while (have_posts()): the_post(); ?>
 
                         <?php $args = array (
-								'post_type' => 'podcasts',
+								'post_type' => 'podcast',
 								'posts_per_page' => 10,
 								'order' => 'ACS',
 								'order' => 'title',

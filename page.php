@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying any single page.
+ * The template for displaying all pages
  *
  */
 

@@ -55,17 +55,8 @@
 		</div>
 	</div>
 	<div class="nav-button">
-		<ul class="nav-links" id="navId">
-			<li>
-				<a href="#" class="">INICIO</a>
-			</li>
-			<li>
-				<a href="#" class="">PODCAST</a>
-			</li>
-			<li>
-				<a href="#" class="">ARTÍCULOS</a>
-			</li>	
-		</ul>
+	<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+
 		<div class="nav-search">
 			<a href=""><i class="fas fa-search"></i></a>
 		</div>

@@ -18,13 +18,13 @@ inc-carousel.php
 						<div class="carousel">
 
 							<?php $args = array (
-								'post_type' => 'podcasts',
+								'post_type' => 'podcast',
 								'posts_per_page' => 10,
 								'order' => 'ACS',
 								'order' => 'title',
 							);  ?>
-								<?php $query2 = new WP_Query($args); ?>
-								<?php while ( $query2->have_posts() ): $query2->the_post(); ?>
+								<?php $query1 = new WP_Query($args); ?>
+								<?php while ( $query1->have_posts() ): $query1->the_post(); ?>
 								<div class="cont-pod-car">
 									<div class="last-podcast">
 										<a href="<?php the_permalink() ?>">

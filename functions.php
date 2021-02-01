@@ -11,7 +11,7 @@ if ( ! isset( $content_width ) ) $content_width = 900;
 /*-----------------------------------------------------------------------------------*/
 /* Add Rss feed support to Head section
 /*-----------------------------------------------------------------------------------*/
-add_theme_support( 'automatic-feed-links' );
+// add_theme_support( 'automatic-feed-links' );
 
 /*-----------------------------------------------------------------------------------*/
 /* Add post thumbnail/featured image support
@@ -141,15 +141,15 @@ add_action( 'wp_enqueue_scripts', 'Bootstrap_scripts' ); // Register this fxn an
 // add_filter('excerpt_more', 'new_excerpt_more');
 
 
-//Muestra Custom post type en inxex
 
-// function mostrar_post_type($clases){
-// 	//Que no sea la pantalla de admin y que sea el query principal
-// 	if(!is_admin() && $clases->is_main_query()){
-// 		//Que sea Home Page
-// 		if (is_home() && ! is_front_page()) {
-// 			$query->set('post_type', array('post', 'podcasts') );
-// 		}
-// 	}
-// }
-// add_action( 'pre_get_posts', 'mostrar_post_type');
+function mostrar_post_type($clases){
+	//Que no sea la pantalla de admin y que sea el query principal
+	if(!is_admin() && $clases->is_main_query()){
+		//Que sea Home Page
+		if (is_home() && ! is_front_page()) {
+			$query->set('post_type', array('post', 'podcasts') );
+		}
+	}
+}
+add_action( 'pre_get_posts', 'mostrar_post_type');
+
