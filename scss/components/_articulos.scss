@@ -1,3 +1,11 @@
+@mixin go {
+    color: #EA6852;
+    &:hover{
+        color: gray;
+        transition: color 0.4s;
+    }
+}
+
 @media (min-width: $break-extrasmall){
     .box-main-article.main-art{
     padding: 0;
@@ -90,6 +98,9 @@
                                     h2{
                                         margin-top: 0;
                                     }
+                                    .go{
+                                        @include go
+                                    }
                                 }
                                 hr.division{
                                     display: block;
@@ -110,6 +121,9 @@
                                             transition: color 0.4s;
                                         }
                                     }
+                                }
+                                .go{
+                                    @include go
                                 }
                             }
                         }//.articulo

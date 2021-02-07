@@ -35,11 +35,13 @@
                             <?php endif; ?>
                         
                         </div><!--post-meta -->
-                        
                         <div class="the-content">
                             <?php the_excerpt(); ?>
                             <?php wp_link_pages(); ?>
                         </div><!-- the-content -->
+                        <a class="go" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+                        Ir al artículo → 
+                        </a>
             
                         <div class="categoria d-flex">
                             <hr class="mr-2" width="100%">

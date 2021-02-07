@@ -1,3 +1,10 @@
+@mixin go {
+    color: #EA6852;
+    &:hover{
+        color: gray;
+        transition: color 0.4s;
+    }
+}
 
 // Query Smartphone
 @media (min-width: $break-extrasmall){
@@ -124,9 +131,19 @@
                             width: 505px;
                             height: 336px;
                             margin-left: 40px;
+                            .go{
+                                @include go
+                            }
                         } //end text-post
                     }//post-container
                 }//&:nth-child
+                .post-container{
+                    .text-post{
+                        .go{
+                            @include go
+                        }
+                    } //end text-post
+                }//post-container
                 h2{
                     margin-top: 20px;
                     a{

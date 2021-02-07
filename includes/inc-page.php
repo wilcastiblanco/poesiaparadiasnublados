@@ -42,6 +42,9 @@
                                 <div class="the-excerpt">
                                     <?php the_excerpt() ?>
                                 </div><!-- the-excerpt -->
+                                <a class="go" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+                                    Ir al artículo → 
+                                </a>
     
                                 <div class="categoria d-flex">
                                     <hr class="mr-2" width="100%">

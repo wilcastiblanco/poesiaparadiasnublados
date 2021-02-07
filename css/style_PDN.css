@@ -720,6 +720,22 @@ main a:hover {
     height: 336px;
     margin-left: 40px;
   }
+  .lastests .posts-container article.post:nth-child(1) .post-container .text-post .go {
+    color: #EA6852;
+  }
+  .lastests .posts-container article.post:nth-child(1) .post-container .text-post .go:hover {
+    color: gray;
+    -webkit-transition: color 0.4s;
+    transition: color 0.4s;
+  }
+  .lastests .posts-container article.post .post-container .text-post .go {
+    color: #EA6852;
+  }
+  .lastests .posts-container article.post .post-container .text-post .go:hover {
+    color: gray;
+    -webkit-transition: color 0.4s;
+    transition: color 0.4s;
+  }
   .lastests .posts-container article.post h2 {
     margin-top: 20px;
   }
@@ -1207,6 +1223,14 @@ h1.title a {
   .box-main-article.main-art .art-social .post-container .row .articulo:nth-child(1) .text-post h2 {
     margin-top: 0;
   }
+  .box-main-article.main-art .art-social .post-container .row .articulo:nth-child(1) .text-post .go {
+    color: #EA6852;
+  }
+  .box-main-article.main-art .art-social .post-container .row .articulo:nth-child(1) .text-post .go:hover {
+    color: gray;
+    -webkit-transition: color 0.4s;
+    transition: color 0.4s;
+  }
   .box-main-article.main-art .art-social .post-container .row .articulo:nth-child(1) hr.division {
     display: block;
     margin-top: 50px;
@@ -1222,6 +1246,14 @@ h1.title a {
   .box-main-article.main-art .art-social .post-container .row .articulo .text-post h2 a:hover {
     color: #EA6852;
     text-decoration: none;
+    -webkit-transition: color 0.4s;
+    transition: color 0.4s;
+  }
+  .box-main-article.main-art .art-social .post-container .row .articulo .text-post .go {
+    color: #EA6852;
+  }
+  .box-main-article.main-art .art-social .post-container .row .articulo .text-post .go:hover {
+    color: gray;
     -webkit-transition: color 0.4s;
     transition: color 0.4s;
   }
