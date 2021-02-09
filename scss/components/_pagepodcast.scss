@@ -1,43 +1,58 @@
-
-.page-podcast{
-    .podcast-container{
-        .articulo{
-            width: 100%;
+@mixin go {
+    color: #EA6852;
+    &:hover{
+        color: gray;
+        transition: color 0.4s;
+    }
+}
+// Podcasts
+.box-main-article.main-art{
+        .art-social{
             display: flex;
-            flex-direction: row;
-            align-items: flex-start;
-            justify-content: space-around;
-            a{
-                height: 370px;
-            }
-            .text-post{
-                width: 500px;
-                h2{
-                    margin-top: 0;
-                    a{  
-                        color: black;
-                        font-size: 26px;
-                        line-height: -10px;
-                        &:hover{
-                            color: #EA6852;
-                            text-decoration: none;
-                            transition: color 0.2s;
-                        }
-                        br{
-                            margin: 0;
-                        }
-                        small{
-                            color: gray;
-                            font-style: italic;
-                            line-height: 0;
-                        }
+            flex-direction: column;
+            justify-content: flex-start;
+            .page-podcast{
+                .podcast-container{
+                    .row{
+                        .articulo{
+                            width: 100%;
+                            display: flex;
+                            flex-direction: row;
+                            align-items: flex-start;
+                            justify-content: space-around;
+                            .text-post{
+                                width: 470px;
+                                h2{
+                                    a{  
+                                        color: black;
+                                        font-size: 26px;
+                                        line-height: -10px;
+                                        &:hover{
+                                            color: #EA6852;
+                                            text-decoration: none;
+                                            transition: color 0.2s;
+                                        }
+                                        br{
+                                            margin: 0;
+                                        }
+                                        small{
+                                            color: gray;
+                                            font-style: italic;
+                                            line-height: 0;
+                                        }
+                                    }
+                                }
+                                .go{
+                                    @include go
+                                }
+                            }
+                            hr.division{
+                                display: block;
+                                margin-top: 50px;
+                            }//hr.division
+                        }//.articulo
                     }
                 }
             }
-            hr.division{
-                display: block;
-                margin-top: 50px;
-            }//hr.division
-        }//.articulo
+        }
     }
-}

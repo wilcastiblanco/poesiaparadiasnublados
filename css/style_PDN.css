@@ -517,7 +517,6 @@ main a:hover {
     margin-left: 0;
   }
   .carousel .contenedor-principal .contenedor-carousel .carousel .cont-pod-car .last-podcast {
-    width: 277px;
     height: 277px;
     margin: 10px;
     -webkit-transition: .6s ease all;
@@ -728,6 +727,9 @@ main a:hover {
     -webkit-transition: color 0.4s;
     transition: color 0.4s;
   }
+  .lastests .posts-container article.post .post-container .text-post h2 {
+    margin-top: 0;
+  }
   .lastests .posts-container article.post .post-container .text-post .go {
     color: #EA6852;
   }
@@ -916,7 +918,20 @@ footer .foot p img {
   margin-bottom: 10px;
 }
 
-.page-podcast .podcast-container .articulo {
+.box-main-article.main-art .art-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.box-main-article.main-art .art-social .page-podcast .podcast-container .row .articulo {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -932,42 +947,44 @@ footer .foot p img {
       justify-content: space-around;
 }
 
-.page-podcast .podcast-container .articulo a {
-  height: 370px;
+.box-main-article.main-art .art-social .page-podcast .podcast-container .row .articulo .text-post {
+  width: 470px;
 }
 
-.page-podcast .podcast-container .articulo .text-post {
-  width: 500px;
-}
-
-.page-podcast .podcast-container .articulo .text-post h2 {
-  margin-top: 0;
-}
-
-.page-podcast .podcast-container .articulo .text-post h2 a {
+.box-main-article.main-art .art-social .page-podcast .podcast-container .row .articulo .text-post h2 a {
   color: black;
   font-size: 26px;
   line-height: -10px;
 }
 
-.page-podcast .podcast-container .articulo .text-post h2 a:hover {
+.box-main-article.main-art .art-social .page-podcast .podcast-container .row .articulo .text-post h2 a:hover {
   color: #EA6852;
   text-decoration: none;
   -webkit-transition: color 0.2s;
   transition: color 0.2s;
 }
 
-.page-podcast .podcast-container .articulo .text-post h2 a br {
+.box-main-article.main-art .art-social .page-podcast .podcast-container .row .articulo .text-post h2 a br {
   margin: 0;
 }
 
-.page-podcast .podcast-container .articulo .text-post h2 a small {
+.box-main-article.main-art .art-social .page-podcast .podcast-container .row .articulo .text-post h2 a small {
   color: gray;
   font-style: italic;
   line-height: 0;
 }
 
-.page-podcast .podcast-container .articulo hr.division {
+.box-main-article.main-art .art-social .page-podcast .podcast-container .row .articulo .text-post .go {
+  color: #EA6852;
+}
+
+.box-main-article.main-art .art-social .page-podcast .podcast-container .row .articulo .text-post .go:hover {
+  color: gray;
+  -webkit-transition: color 0.4s;
+  transition: color 0.4s;
+}
+
+.box-main-article.main-art .art-social .page-podcast .podcast-container .row .articulo hr.division {
   display: block;
   margin-top: 50px;
 }
@@ -977,9 +994,10 @@ h1.title {
 }
 
 h1.title a {
-  font-size: 38px;
+  font-size: 36px;
   font-style: normal;
   color: black;
+  font-weight: 500;
 }
 
 .box-main-article.single-art {
@@ -1199,6 +1217,28 @@ h1.title a {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .box-main-article.main-art .art-social .post-container .row .articulo .text-post h2 {
+    margin: 20px 0;
+  }
+  .box-main-article.main-art .art-social .post-container .row .articulo .text-post h2 a {
+    color: black;
+    font-size: 26px;
+    line-height: 1px;
+  }
+  .box-main-article.main-art .art-social .post-container .row .articulo .text-post h2 a:hover {
+    color: #EA6852;
+    text-decoration: none;
+    -webkit-transition: color 0.4s;
+    transition: color 0.4s;
+  }
+  .box-main-article.main-art .art-social .post-container .row .articulo .text-post .go {
+    color: #EA6852;
+  }
+  .box-main-article.main-art .art-social .post-container .row .articulo .text-post .go:hover {
+    color: gray;
+    -webkit-transition: color 0.4s;
+    transition: color 0.4s;
+  }
   .box-main-article.main-art .art-social .post-container .row .articulo:nth-child(1) {
     width: 100%;
     display: -webkit-box;
@@ -1235,27 +1275,9 @@ h1.title a {
     display: block;
     margin-top: 50px;
   }
-  .box-main-article.main-art .art-social .post-container .row .articulo .text-post h2 {
-    margin: 20px 0;
-  }
-  .box-main-article.main-art .art-social .post-container .row .articulo .text-post h2 a {
-    color: black;
-    font-size: 26px;
-    line-height: 1px;
-  }
-  .box-main-article.main-art .art-social .post-container .row .articulo .text-post h2 a:hover {
-    color: #EA6852;
-    text-decoration: none;
-    -webkit-transition: color 0.4s;
-    transition: color 0.4s;
-  }
-  .box-main-article.main-art .art-social .post-container .row .articulo .text-post .go {
-    color: #EA6852;
-  }
-  .box-main-article.main-art .art-social .post-container .row .articulo .text-post .go:hover {
-    color: gray;
-    -webkit-transition: color 0.4s;
-    transition: color 0.4s;
+  .box-main-article.main-art .art-social .post-container .row .articulo .widget_podcast {
+    background-color: aqua;
+    width: 100%;
   }
   .box-main-article.main-art .art-social .side-social {
     padding: 5px;

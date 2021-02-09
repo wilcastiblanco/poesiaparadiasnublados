@@ -79,6 +79,7 @@ function PDN_register_sidebars() {
 // adding sidebars to Wordpress (these are created in functions.php)
 add_action( 'widgets_init', 'PDN_register_sidebars' );
 
+
 /*-----------------------------------------------------------------------------------*/
 /* Enqueue Styles and Scripts
 /*-----------------------------------------------------------------------------------*/

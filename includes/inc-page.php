@@ -43,7 +43,7 @@
                                     <?php the_excerpt() ?>
                                 </div><!-- the-excerpt -->
                                 <a class="go" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-                                    Ir al artículo → 
+                                    Ir al artículo <i>⎘ →</i>
                                 </a>
     
                                 <div class="categoria d-flex">

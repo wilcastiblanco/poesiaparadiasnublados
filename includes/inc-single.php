@@ -8,6 +8,13 @@
             <article class="post">
                 <div class="row">
                     <div class="post-container col-11">
+                        <?php if (!is_front_page()) : ?>
+                            <h1 class="title">
+                                <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+                                    <?php the_title(); ?>
+                                </a>
+                            </h1>
+                        <?php endif; ?>
                         <a class="d-block d-md-none" href="<?php the_permalink() ?>" target=”_blank”>
                             <?php the_post_thumbnail('destacada-sm'); ?>
                         </a>
@@ -16,13 +23,6 @@
                         </a>
                         <div class="text-post">
 
-                            <?php if (!is_front_page()) : ?>
-                                <h1 class="title">
-                                    <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-                                        <?php the_title(); ?>
-                                    </a>
-                                </h1>
-                            <?php endif; ?>
         
                             <div class="post-meta">
                                     <p> fecha: <?php the_time('m/d/Y'); ?> | Autor: <?php the_author('archive'); ?></p>
@@ -30,8 +30,7 @@
 
                             <div class="the-excerpt">
                                 <?php the_excerpt() ?>
-                            </div><!-- the-excerpt -->
-                            
+                            </div><!-- the-excerpt -->                            
                             <div class="categoria d-flex mb-3">
                                 <hr class="mr-2" width="100%">
                                 <div class="category"><?php echo get_the_category_list(); // Display the categories this post belongs to, as links ?>

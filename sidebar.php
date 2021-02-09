@@ -6,7 +6,7 @@
  *
 */
 ?>
-			<?php if ( ! dynamic_sidebar( 'sidebar' ) ) : // If the user hasn't defined any specific widgets in the admin yet, display a couple dummy widgets, as written below ?>
+			<?php if ( !dynamic_sidebar( 'sidebar' ) ) : // If the user hasn't defined any specific widgets in the admin yet, display a couple dummy widgets, as written below ?>
 				<aside id="archives" class="widget">
 					<h3 class="side-title"><?php _e( 'Archives', 'PDN' ); // Wordpress archives widget ?></h3>
 					<ul>

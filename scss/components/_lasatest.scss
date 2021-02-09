@@ -139,6 +139,9 @@
                 }//&:nth-child
                 .post-container{
                     .text-post{
+                        h2{
+                            margin-top: 0;
+                        }
                         .go{
                             @include go
                         }

@@ -24,23 +24,19 @@
                             </a>
                         </h2>
                     
-                        <?php endif; ?>
+                    <?php endif; ?>
 
                         <div class="post-meta">
-                            <?php the_time('m/d/Y'); ?> | 
-                            <?php if( comments_open() ) : ?>
-                                <span class="comments-link">
-                                    <?php comments_popup_link( __( 'Comment', 'break' ), __( '1 Comment', 'break' ), __( '% Comments', 'break' ) ); ?>
-                                </span>
-                            <?php endif; ?>
-                        
-                        </div><!--post-meta -->
+                            <p> fecha: <?php the_time('m/d/Y'); ?> | Autor: <?php the_author('archive'); ?></p>
+                        </div><!-- post-meta -->
+
                         <div class="the-content">
                             <?php the_excerpt(); ?>
                             <?php wp_link_pages(); ?>
                         </div><!-- the-content -->
+
                         <a class="go" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-                        Ir al artículo → 
+                        Ir al artículo ⎘ → 
                         </a>
             
                         <div class="categoria d-flex">
@@ -51,7 +47,7 @@
                         </div><!-- categoria -->
                     </div><!-- text-post -->
                 </div> <!-- post-container -->
-                <hr class="division" style="border-style: solid; margin: 40px 10px 0px 10px"/>
+                <hr class="division" style="border-style: solid; margin: 45px 10px 0px 10px"/>
             </article>
 
         <?php endwhile; ?>

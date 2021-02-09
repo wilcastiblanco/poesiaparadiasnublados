@@ -14,14 +14,11 @@
 								'order' => 'title',
 							);  ?>
                     <div class="row">
-                    
+                        
                             <?php $query2 = new WP_Query($args); ?>
                             <?php while ( $query2 -> have_posts() ) : $query2 -> the_post(); ?>
                             <div class="articulo">
-                            <a class="d-block d-md-none" href="<?php the_permalink() ?>" target=”_blank”>
-                                <?php the_post_thumbnail('podcast'); ?>
-                            </a>
-                            <a class="d-none d-md-block" href="<?php the_permalink() ?>">
+                            <a class="" href="<?php the_permalink() ?>">
                                 <?php the_post_thumbnail('podcast'); //Get the thumbnail to this post. ?>
                             </a>
                             <div class="text-post">
@@ -41,7 +38,10 @@
                                 <div class="the-excerpt">
                                     <?php the_excerpt() ?>
                                 </div><!-- the-excerpt -->
-    
+                                <a class="go" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+                                    Ir al podcast <i>☊ →</i>
+                                    
+                                </a>
                                 <div class="categoria d-flex">
                                     <div class="tags"><?php echo get_the_tag_list( '| &nbsp;', '&nbsp;' ); // Display the tags this post has, as links separated by spaces and pipes ?></div>
                                 </div><!-- categoria -->
