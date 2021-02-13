@@ -1,6 +1,6 @@
 <div class="single-article">
     <div class="posts-container container">
-        
+
         <article class="post">
             <div class="row">
                 <div class="post-container col-11">
@@ -28,7 +28,7 @@
                             <div class="text-post">
     
                                 <?php if (!is_front_page()) : ?>
-                                    <h2 class="title">
+                                    <h2 class="title mb-1">
                                         <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
                                             <?php the_title(); ?>
                                         </a>

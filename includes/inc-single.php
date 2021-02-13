@@ -10,17 +10,15 @@
                     <div class="post-container col-11">
                         <?php if (!is_front_page()) : ?>
                             <h1 class="title">
-                                <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-                                    <?php the_title(); ?>
-                                </a>
+                                <?php the_title(); ?>
                             </h1>
                         <?php endif; ?>
-                        <a class="d-block d-md-none" href="<?php the_permalink() ?>" target=”_blank”>
+                        <div class="d-block d-md-none" href="<?php the_permalink() ?>" target=”_blank”>
                             <?php the_post_thumbnail('destacada-sm'); ?>
-                        </a>
-                        <a class="d-none d-md-block" href="<?php the_permalink() ?>">
+                        </div>
+                        <div class="d-none d-md-block" href="<?php the_permalink() ?>">
                             <?php the_post_thumbnail( 'single-thumbnail', array( 'class' => 'img-fluid' )); //Get the thumbnail to this post. ?>
-                        </a>
+                        </div>
                         <div class="text-post">
 
         
