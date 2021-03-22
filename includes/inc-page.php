@@ -10,7 +10,7 @@
 
                             <?php $args = array(
                                 'post_type' => 'post',
-                                'post_per_page' => 10,
+                                // 'post_per_page' => 10,
                                 'order' => 'ACS',
                                 'order' => 'title',
                             ); ?>
@@ -64,10 +64,10 @@
                     </div> <!-- post-container -->
         
                     <div class="side-social col-1">
-                        <div class="caja-social">
-                            <a href=""><i class="fab fa-facebook-f"></i></a>
-                            <a href=""><i class="fab fa-instagram"></i></a>
-                            <a href=""><i class="fab fa-spotify"></i></a>
+                    <div class="caja-social">
+                            <a href="https://www.facebook.com/gloriagudelom/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/poesia_paradias_nublados/" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://open.spotify.com/show/1Sx4Tu0UIhvWFoFCAOmsTn?si=Babg0a7YQ86H54mVZSAZsw" target="_blank"><i class="fab fa-spotify"></i></a>
                         </div><!-- caja-social - incluye links para redes sociales -->
                     </div><!-- side-social -->
             </div> <!-- row 1 -->
@@ -76,8 +76,8 @@
     </div><!-- posts-container -->
 
     <div id="pagination" class="clearfix">
-        <div class="btn btn-primary past-page"><?php previous_posts_link( 'newer' ); // Display a link to  newer posts, if there are any, with the text 'newer' ?></div>
-        <div class="btn btn-primary next-page"><?php next_posts_link( 'older' ); // Display a link to  older posts, if there are any, with the text 'older' ?></div>
+        <a href="<?php previous_posts_link('« Newer Entries', 'textdomain' );?>">Artículos Anteriores</a>
+        <a href="<?php next_posts_link( 'Older Entries »', 0 );?>">Siguientes Artículos</a>
     </div><!-- pagination -->
 
 </div> <!-- single-article -->

@@ -86,7 +86,7 @@ main a:hover {
   .movil .nav-top .suscript {
     display: none;
   }
-  .movil .nav-links {
+  .movil #menu-menu {
     position: absolute;
     z-index: 1000;
   }
@@ -107,9 +107,9 @@ main a:hover {
   .movil .nav-button {
     z-index: 2000;
   }
-  .movil .nav-button .nav-links {
-    height: 80%;
-    width: 100%;
+  .movil .nav-button #menu-menu {
+    height: 100%;
+    width: 50%;
     border-bottom: 0.5px solid #979797;
     background-color: rgba(0, 0, 0, 0.85);
     position: fixed;
@@ -125,14 +125,14 @@ main a:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
     -webkit-transition: -webkit-transform 0.5s ease-in;
     transition: -webkit-transform 0.5s ease-in;
     transition: transform 0.5s ease-in;
     transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
   }
-  .movil .nav-button .nav-links li a {
+  .movil .nav-button #menu-menu li a {
     color: white;
   }
   .movil .nav-button .nav-active {
@@ -1000,6 +1000,10 @@ h1.title a {
   font-weight: 500;
 }
 
+.podcast-container .row .field.notas ul li {
+  list-style: initial;
+}
+
 .box-main-article.single-art {
   padding: 0;
   margin-left: 100px;
@@ -1390,11 +1394,5 @@ main a:hover {
 .sidebar.sidebar-single ul li a {
   font-size: 20px;
   line-height: 1em;
-}
-
-html body.podcast-template-default.single.single-podcast.postid-80.single-format-standard.logged-in.admin-bar.customize-support primary main.mt-5 div.row article.box-main-article.main-art.col-8 div.art-social div.page-podcast div.podcasts-container.container article.article-podcast div.row div.podcast-container.col-11 div.row div.embed-container {
-  width: 500px;
-  height: 500px;
-  background-color: aqua;
 }
 /*# sourceMappingURL=style_PDN.css.map */

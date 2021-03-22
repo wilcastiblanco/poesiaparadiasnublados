@@ -2,8 +2,8 @@
 
 const navSlide = () => {
     const burger = document.querySelector('.burger');
-    const nav = document.querySelector('.nav-links');
-    const navLinks = document.querySelectorAll('.nav-links li');
+    const nav = document.querySelector('#menu-menu');
+    const navLinks = document.querySelectorAll('#menu-menu li');
 
     burger.addEventListener('click', () => {
 

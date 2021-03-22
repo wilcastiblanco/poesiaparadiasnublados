@@ -12,7 +12,7 @@
 
 <!-- Query Carousel -->
 				
-						<?php if ( have_posts() ) :?>
+					<?php if ( have_posts() ) :?>
 						<div class="carousel">
 
 							<?php $args = array (
@@ -39,9 +39,7 @@
 								</div>
 							<?php endwhile; wp_reset_postdata(); ?>
 						</div>
-					
-                
-			</div>
+					</div>
                     <?php endif; ?>
 
 			<button role="button" id="flecha-derecha" class="btn flecha-derecha"><i class="fas fa-angle-right"></i></button>

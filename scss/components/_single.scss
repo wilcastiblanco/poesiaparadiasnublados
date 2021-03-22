@@ -8,6 +8,17 @@ h1.title{
         font-weight: 500;
     }
 }
+.podcast-container{
+    .row{
+        .field.notas{
+            ul{
+                li{
+                    list-style: initial;
+                }
+            }
+        }
+    }
+}
 .box-main-article.single-art{
     padding: 0;
     margin-left: 100px;

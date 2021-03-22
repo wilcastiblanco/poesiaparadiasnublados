@@ -41,10 +41,10 @@
 		<div class="suscript">
 			<h3>Suscríbete a nuestra lista</h3>
 			<form class="">
-			<div class="in-but">
-				<input class="form-control" type="search" placeholder="Ingresa aquí tu correo" aria-label="Search">
-				<button class="btn button" type="submit">Enviar</button>
-			</div>
+				<div class="in-but">
+					<input class="form-control" type="search" placeholder="Ingresa aquí tu correo" aria-label="Search">
+					<button class="btn button" type="submit">Enviar</button>
+				</div>
 			</form>
 		</div>
 		
@@ -55,7 +55,12 @@
 		</div>
 	</div>
 	<div class="nav-button">
-	<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+	<?php wp_nav_menu( array ( 
+		'menu'       => 'menu',
+		'menu_class' => 'menu',
+		'theme_location' => 'primary',
+	) ); 
+	?>
 
 		<div class="nav-search">
 			<a href=""><i class="fas fa-search"></i></a>
@@ -63,7 +68,7 @@
 	</div>
 </header>
 
-<!-- Heather for Screen -->
+<!-- Header for Screen -->
 <header class="screen d-none d-md-block">
 	<div class="nav-top">
 		<a class="navbar-brand" href="#">
@@ -86,24 +91,12 @@
 		</div>
 	</div>
 	<div class="nav-button">
-	<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-
-		<!-- <ul class="nav" id="navId">
-			<li class="nav-item">
-				<a href="#tab1Id" class="btn nav-link active">INICIO<span class="sr-only">(current)</span></a>
-			</li>
-			<li class="nav-item">
-				<a href="#tab5Id" class="btn nav-link">PODCAST</a>
-			</li>
-			<li class="nav-item">
-				<a href="#tab5Id" class="btn nav-link">ARTÍCULOS</a>
-			</li>	
-		</ul> -->
+	<?php wp_nav_menu( array ( 
+		'theme_location' => 'primary',
+	) ); 
+	?>
 		<div class="nav-search">
 			<a href=""><i class="fas fa-search"></i></a>
 		</div>
 	</div>
 </header>
-
-
-

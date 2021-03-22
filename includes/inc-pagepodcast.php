@@ -66,10 +66,10 @@
                     </div> <!-- post-container -->
         
                     <div class="side-social col-1">
-                        <div class="caja-social">
-                            <a href=""><i class="fab fa-facebook-f"></i></a>
-                            <a href=""><i class="fab fa-instagram"></i></a>
-                            <a href=""><i class="fab fa-spotify"></i></a>
+                    <div class="caja-social">
+                            <a href="https://www.facebook.com/gloriagudelom/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/poesia_paradias_nublados/" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://open.spotify.com/show/1Sx4Tu0UIhvWFoFCAOmsTn?si=Babg0a7YQ86H54mVZSAZsw" target="_blank"><i class="fab fa-spotify"></i></a>
                         </div><!-- caja-social - incluye links para redes sociales -->
                     </div><!-- side-social -->
             </div> <!-- row 1 -->
