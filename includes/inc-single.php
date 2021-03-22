@@ -46,7 +46,7 @@
                         <div id="pagination" class="clearfix">
                         <a class="btn btn-primary" href="<?php previous_posts_link('« Newer Entries', 'textdomain' );?>" role="button">anterior</a>
                         <a class="btn btn-primary" href="<?php next_posts_link( 'Older Entries »', 0 );?>" role="button">siguiente</a>
-    </div><!-- pagination -->
+        </div><!-- pagination -->
                     </div> <!-- post-container -->
         
                     <div class="side-social col-1">
