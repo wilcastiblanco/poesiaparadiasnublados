@@ -36,6 +36,48 @@ main a:hover {
   transition: color 0.4s;
 }
 
+@media screen and (min-width: 768px) {
+  .inicial_page {
+    width: 100%;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .inicial_page .expectativa {
+    width: 900px;
+    height: 560px;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .inicial_page .expectativa .logo_expectativa {
+    margin-bottom: 30px;
+  }
+  .inicial_page .expectativa h2 {
+    font-style: italic;
+    color: #EA6852;
+  }
+}
+
 @media (min-width: 200px) {
   .movil .nav-top {
     height: 110px;

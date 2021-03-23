@@ -1,3 +1,9 @@
+$break-extrasmall: 200px;
+$break-small: 576px;
+$break-medium: 768px;
+$break-large: 992px;
+$mbreak-extralarge: 1200px;
+
 @mixin go {
     color: #EA6852;
     &:hover{

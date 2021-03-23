@@ -1,6 +1,7 @@
 
 
 @import "components/index";
+@import "components/home";
 @import "components/header";
 @import "components/carousel";
 @import "components/lasatest";
@@ -96,6 +97,7 @@ $mbreak-extralarge: 1200px;
     h1, h2, h3, h4, ul, li, a, br{
         line-height: 1.2em;
     }
+
 }
 
 
