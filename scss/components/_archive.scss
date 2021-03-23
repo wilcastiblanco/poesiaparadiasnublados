@@ -1,0 +1,34 @@
+
+article.single-article{
+    margin: 0;
+    padding: 0;
+    border-right: 0.5px solid rgb(187, 187, 187);
+}
+.box-main-article{
+    padding: 0;
+    margin-left: 100px;
+    .art-social{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        .side-social{
+            padding: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-end;
+            flex-wrap: nowrap;
+            .caja-social{
+                width: 20px;
+                text-align: center;
+                i{
+                    height: 30px;
+                }
+
+            }
+        }
+    }
+}
+.sidebar-single{
+    margin-right: 20px;
+}

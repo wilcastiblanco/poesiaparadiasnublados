@@ -1,0 +1,31 @@
+
+
+@media (min-width: $break-extrasmall) {
+
+}
+@media screen and (min-width: $break-medium) {
+    .inicial_page{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        .expectativa{
+            width: 900px;
+            height: 560px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;            
+            justify-content: space-around;
+            .logo_expectativa{
+                margin-bottom: 30px;
+            }
+            h2{
+                font-style: italic;
+                color: #EA6852;
+            }
+        }
+    }
+}

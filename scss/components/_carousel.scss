@@ -3,10 +3,11 @@
     border: none;
     background-color:rgba($color: #ffffff, $alpha: 0.3);
     font-size: 40;
-    border-radius: 50px;
+    border-radius: 60px;
     top: calc(50% - 25%);
-    line-height: 40px;
+    line-height: 35px;
     width: 50px;
+    height: 50px;
     color: black;
     z-index: 500;
     transition: .2s ease all;
@@ -17,13 +18,12 @@
 @media (min-width: $break-extrasmall){
     .carousel{
         margin: 16px;
-        background-image: radial-gradient(48% 180%, #212121 44%, #232323 100%);
         display: flex;
         flex-direction: column;
         justify-content: center;
         h1{
+            margin: 40px 0;
             text-align: center;
-            color: white;
         }
         .contenedor-titulo-controles{
             display: flex;
@@ -61,19 +61,17 @@
                     flex-direction: row;
                     justify-content: center;
                     .last-podcast{
-                        width: 227px;
+                        width: 277px;
+                        height: 277px;
                         margin: 10px;
                         transition: .6s ease all;
-                        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-                        border-radius: 10px;
                         filter: brightness(0.8);
                         img{
                             vertical-align: top; 
-                            border-radius: 10px;
                         }
                     }
                     .last-podcast:hover{
-                        transform: scale(1.05);
+                        transform: scale(1.01);
                         transform-origin: center;
                         filter: brightness(1.0);
                     }
@@ -94,13 +92,12 @@
 @media screen and (min-width: $break-medium){
     .carousel{
         margin: 16px;
-        background-image: radial-gradient(48% 180%, #212121 44%, #232323 100%);
         display: flex;
         flex-direction: column;
         justify-content: center;
         h1{
             text-align: center;
-            color: white;
+            margin: 30px 0 10px 0;
         }
         .contenedor-titulo-controles{
             display: flex;
@@ -127,7 +124,7 @@
             .flecha-izquierda{
                 @include flechas;
                 left: 5px;
-                top: 120px;
+                top: 140px;
             }
             .contenedor-carousel{
                 padding: 10px 0;
@@ -136,28 +133,42 @@
                 .carousel{
                     display: flex;
                     flex-direction: row;
-                    justify-content: center;
-                    .last-podcast{
-                        width: 227px;
-                        margin: 10px;
-                        transition: .6s ease all;
-                        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-                        filter: brightness(0.8);
-                        img{
-                            vertical-align: top; 
+                    justify-content: flex-start;
+                    margin-left: 0;
+                    .cont-pod-car{
+                        .last-podcast{
+                            // width: 277px;
+                            height: 277px;
+                            margin: 10px;
+                            transition: .6s ease all;
+                            filter: brightness(0.8);
+                            img{
+                                vertical-align: top; 
+                            }
+                            &:hover{
+                                transform: scale(1.01);
+                                transform-origin: center;
+                                filter: brightness(1.0);
+                                box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+                            }
                         }
-                    }
-                    .last-podcast:hover{
-                        transform: scale(1.05);
-                        transform-origin: center;
-                        filter: brightness(1.0);
+                        .title-last-podcast{
+                            margin: 10px;
+                            h2{
+                                font-size: 22px;
+                                line-height: 20px;
+                                small{
+                                    font-style: italic;
+                                }
+                            }
+                        }
                     }
                 }
             }
             .flecha-derecha{
                 @include flechas;
                 right: 5px;
-                top: 120px;
+                top: 140px;
             }
         }
     }

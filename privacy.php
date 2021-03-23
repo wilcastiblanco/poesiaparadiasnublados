@@ -1,16 +1,14 @@
 <?php
-/**
- * The template for displaying all single posts
- *
- */
-
+/*
+Template Name: Privacy
+*/
 define( 'WP_USE_THEMES', false ); get_header(); ?>
 <primary>
 	<main class="mt-5">
 		<div class="row">
 			<article class="box-main-article  main-art col-8">
 				<div class="art-social">
-					<?php include 'includes/inc-single.php';
+					<?php include 'includes/inc-privacy.php';
 					//Incluye carousel?>
 				</div>
 			</article><!-- article -->

@@ -11,14 +11,14 @@ if ( ! isset( $content_width ) ) $content_width = 900;
 /*-----------------------------------------------------------------------------------*/
 /* Add Rss feed support to Head section
 /*-----------------------------------------------------------------------------------*/
-add_theme_support( 'automatic-feed-links' );
+// add_theme_support( 'automatic-feed-links' );
 
 /*-----------------------------------------------------------------------------------*/
 /* Add post thumbnail/featured image support
 /*-----------------------------------------------------------------------------------*/
 
 // without parameter -> Post Thumbnail (as set by theme using set_post_thumbnail_size())
-the_post_thumbnail();
+//the_post_thumbnail();
 
 //the_post_thumbnail('thumbnail');       // Thumbnail (default 150px x 150px max)
 //the_post_thumbnail('medium');          // Medium resolution (default 300px x 300px max)
@@ -32,22 +32,30 @@ the_post_thumbnail();
 add_theme_support( 'post-thumbnails' );
 add_image_size( 'destacada', 505, 336, false);
 add_image_size( 'destacada-sm', 340, 240, false);
-add_image_size( 'destacada-podcast', 227, 285, false);
+add_image_size( 'destacada-sm2', 370, 246, false);
+add_image_size( 'destacada-sm2', 370, 370, false);
+add_image_size( 'podcast', 277, 277, false);
+add_image_size( 'destacada-podcast', 277, 277, false);
+add_image_size( 'single-thumbnail', 813, 600, false);
 
 /*-----------------------------------------------------------------------------------*/
 /* Consultas reutilizables
 /*-----------------------------------------------------------------------------------*/
 
-require get_template_directory() . '/includes/queries.php';
+// require get_template_directory() . '/includes/query-carousel-podcasts.php';
+// require get_template_directory() . '/includes/query-page-podcasts.php';
+// require get_template_directory() . '/includes/query-single-podcast.php';
+
+
+
 
 /*-----------------------------------------------------------------------------------*/
 /* Register main menu for Wordpress use
 /*-----------------------------------------------------------------------------------*/
 register_nav_menus( 
 	array(
-		'primary'	=>	__( 'Primary Menu', 'PDN' ), // Register the Primary menu
-		// Copy and paste the line above right here if you want to make another menu, 
-		// just change the 'primary' to another name
+		'primary'	=>	__( 'Primary Menu', 'pdn' ),
+		'footer_menu'	=>	__( 'Footer Menu', 'pdn' ),
 	)
 );
 
@@ -70,6 +78,7 @@ function PDN_register_sidebars() {
 } 
 // adding sidebars to Wordpress (these are created in functions.php)
 add_action( 'widgets_init', 'PDN_register_sidebars' );
+
 
 /*-----------------------------------------------------------------------------------*/
 /* Enqueue Styles and Scripts
@@ -100,10 +109,10 @@ add_action( 'wp_enqueue_scripts', 'PDN_scripts' ); // Register this fxn and allo
 function Bootstrap_scripts(){
 	
 	wp_enqueue_style( 'bootstrap.css', 'https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css');
-	wp_enqueue_style( 'normalize.css', 'https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css.map');
+	// wp_enqueue_style( 'normalize.css', 'https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css.map');
 	
 	wp_enqueue_script('jquiery', 'https://code.jquery.com/jquery-3.5.1.slim.min.js');
-	// wp_enqueue_script('popper-js', 'https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js');
+	wp_enqueue_script('popper-js', 'https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js');
 	wp_enqueue_script('bootstrap-js', 'https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js'); 
 }
 
@@ -111,24 +120,15 @@ add_action( 'wp_enqueue_scripts', 'Bootstrap_scripts' ); // Register this fxn an
 
 
 
-/*-----------------------------------------------------------------------------------*/
-/* Length to the_except
-/*--------
+// function mostrar_post_type($clases){
+// 	//Que no sea la pantalla de admin y que sea el query principal
+// 	if(!is_admin() && $clases->is_main_query()){
+// 		//Que sea Home Page
+// 		if (is_home() && ! is_front_page()) {
+// 			$query->set('post_type', array('post', 'podcasts') );
+// 		}
+// 	}
+// }
+// add_action( 'pre_get_posts', 'mostrar_post_type');
 
-// /**
-//  * Filter the except length to 20 words.
-//  *
-//  * @param int $length Excerpt length.
-//  * @return int (Maybe) modified excerpt length.
-//  */
-function wpdocs_custom_excerpt_length( $length ) {
-    return 20;
-}
-add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
-
-function new_excerpt_more($more) {
-    global $post;
-    return '... <a href="'. get_permalink($post->ID) . '">leer mas</a>.';
-}
-add_filter('excerpt_more', 'new_excerpt_more');
 

@@ -1,0 +1,46 @@
+h1.title{
+    margin: 30px 0;
+    a{
+        font-size: 36px;
+        font-style: normal;
+        color: black;
+        font-weight: 500;
+    }
+}
+.podcast-container{
+    .row{
+        .field.notas{
+            ul{
+                li{
+                    list-style: initial;
+                }
+            }
+        }
+    }
+}
+.box-main-article.single-art{
+    padding: 0;
+    margin-left: 100px;
+    font-size: 38px;
+    .art-social{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        .side-social{
+            padding: 5px;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-wrap: nowrap;
+            .caja-social{
+                width: 20px;
+                text-align: center;
+                margin-right: 10px;
+                i{
+                    height: 30px;
+                }
+            }
+        } // .side-social
+    }
+}

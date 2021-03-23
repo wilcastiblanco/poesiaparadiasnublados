@@ -1,12 +1,19 @@
-/* @import url(css/normalize.css); */
-@import url(https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap);
-@import url(https://fonts.googleapis.com/css2?family=Lovers+Quarrel&display=swap);
-@import url(https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&display=swap);
+@import url(http://fonts.googleapis.com/css?family=Karla|Quicksand);
+@import url(https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap);
+
+/* Cormorant Styles
+Light 300
+Light 300 italic
+Regular 400
+Regular 400 italic
+Medium 500
+Medium 500 italic 
+*/
 
 /* Theme Name: PDN Wordpress
-Theme URI: http://bckmn.com/PDN-wordpress
-Author: J Beckman
-Author URI: http://bckmn.com
+Theme URI: http://mutacionessonoras.com
+Author: Wil Castiblanco
+Author URI: http://mutacionessonoras.com
 Description: A super bare theme for designers who don't know Wordpress PHP but want to build with Wordpress.
 Version: 1.0
 License: GNU General Public License */

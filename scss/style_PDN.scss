@@ -1,7 +1,155 @@
 
-@import "components/index";
-@import "components/header";
-@import "components/frontCarousel";
-@import "components/frontLasatestPosts";
-@import "components/footer";
 
+@import "components/index";
+@import "components/home";
+@import "components/header";
+@import "components/carousel";
+@import "components/lasatest";
+@import "components/footer";
+@import "components/pagepodcast";
+@import "components/single";
+@import "components/contact";
+@import "components/articulos";
+
+
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+// @media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+// @media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+// @media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+// @media (min-width: 1200px) { ... }
+
+// Dispositivo	Resolución
+// Versión de escritorio (base)	940 a 1000 px
+// Versión para tabletas	940 a 780 px
+// Versión para teléfonos	780 px
+
+
+$break-extrasmall: 200px;
+$break-small: 576px;
+$break-medium: 768px;
+$break-large: 992px;
+$mbreak-extralarge: 1200px;
+
+// Mixes
+
+@mixin primary-color{
+    background-color: #EA6852;
+}
+@mixin flex-col-cent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-row-betw{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+@mixin hover-ul-li-pink{
+        ul{
+            li{
+                :hover{
+                    color: #EA6852;
+                    text-decoration: none;
+                    transition: color 0.4s;
+                }
+            }
+        }
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Cormorant', serif;
+    font-size: 21px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: 0.03em;
+    p{
+        line-height: 1.3em;
+    }
+    h1{
+        font-size: 32px;
+        
+    }
+    h2{
+        font-size: 50px;
+        
+    }
+    h3{ 
+        font-size: 26px;
+        color: complement($color: #000000);
+    }
+    h1, h2, h3, h4, ul, li, a, br{
+        line-height: 1.2em;
+    }
+
+}
+
+
+//Inicio código
+
+html, body, h1, h2, h3, footer, header, a, p, article{
+    color: black;
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    list-style: none;
+    text-decoration: none;
+}
+.in-but{
+    button{
+        &:hover{
+            color: #EA6852;
+            text-decoration: none;
+            transition: color 0.4s;
+        }
+    }
+}
+main{
+    a{
+        color: gray;
+        font-style: italic;
+        &:hover{
+            color: #EA6852;
+            text-decoration: none;
+            transition: color 0.4s;
+        }
+    }
+}
+
+// Sidebar styles
+.sidebar.sidebar-single{
+    border-left: solid;
+    border-width: 0.5px;
+    border-color: rgb(205, 205, 205);
+    padding-left: 20px;
+    h3{
+        font-size: 26px;
+        color: #EA6852;
+    }
+    ul{
+        li{
+            margin-bottom: 10px;
+            a{
+                font-size: 20px;
+                line-height: 1em;
+
+            }
+        }
+    }
+}

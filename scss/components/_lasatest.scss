@@ -1,3 +1,16 @@
+$break-extrasmall: 200px;
+$break-small: 576px;
+$break-medium: 768px;
+$break-large: 992px;
+$mbreak-extralarge: 1200px;
+
+@mixin go {
+    color: #EA6852;
+    &:hover{
+        color: gray;
+        transition: color 0.4s;
+    }
+}
 
 // Query Smartphone
 @media (min-width: $break-extrasmall){
@@ -6,9 +19,7 @@
         width: 100%;
         h1{
             text-align: center;
-            border-top: 0.5px solid #979797;
-            border-bottom: 0.5px solid #979797;
-            margin: 50px 0;
+            margin: 30px 0 25px 0;        
         }//h1
 
         .posts-container{
@@ -33,8 +44,6 @@
                         flex-wrap: wrap;
                         .text-post{
                             width: 100%; //Change
-                            //height: 336px; //Change
-                            //margin-left: 40px; //Change
                         } //end text-post
                     }//post-container
                 }//&:nth-child
@@ -48,7 +57,7 @@
                 h2{
                     margin-top: 20px;
                     a{
-                        font-family: 'Cormorant Garamond', serif;
+                        font-family: 'Cormorant', serif;
                         color: black;
                         font-size: 28px;
                         &:hover{
@@ -59,11 +68,11 @@
                     } //a
                 } //h2
                 .post-meta{
-                    font-family: 'Cormorant Garamond', serif;
+                    font-family: 'Cormorant', serif;
                     font-style: italic;
                     font-weight: lighter;
                     #text{
-                        font-family: 'Cormorant Garamond', serif;
+                        font-family: 'Cormorant', serif;
                         font-style: italic;
                         font-weight: lighter;
                     }
@@ -73,7 +82,7 @@
                 p{
                     width: 100%;
                     margin-top: 20px;
-                    font-family: 'Cormorant Garamond', serif;
+                    font-family: 'Cormorant', serif;
                     font-style: italic;
                     font-weight: lighter;
                     font-size: 22px;
@@ -99,16 +108,14 @@
 
 
 
-// Query Smartphone
+// Query Screen
 @media screen and (min-width: $break-large){
 
     .lastests{
         width: 100%;
         h1{
             text-align: center;
-            border-top: 0.5px solid #979797;
-            border-bottom: 0.5px solid #979797;
-            margin: 50px 0;
+            margin: 30px 0 25px 0;        
         }//h1
 
         .posts-container{
@@ -119,13 +126,8 @@
             article.post{
                 width: 505px;
                 height: 336;
-                margin: 20px;
                 &:nth-child(1){
                     width: 100%;
-                    hr.division{
-                        display: block;
-                        margin-top: 50px;
-                    }//hr.division
                     .post-container{
                         display: flex;
                         justify-content: center;
@@ -135,13 +137,26 @@
                             width: 505px;
                             height: 336px;
                             margin-left: 40px;
+                            .go{
+                                @include go
+                            }
                         } //end text-post
                     }//post-container
                 }//&:nth-child
+                .post-container{
+                    .text-post{
+                        h2{
+                            margin-top: 0;
+                        }
+                        .go{
+                            @include go
+                        }
+                    } //end text-post
+                }//post-container
                 h2{
                     margin-top: 20px;
                     a{
-                        font-family: 'Cormorant Garamond', serif;
+                        font-family: 'Cormorant', serif;
                         color: black;
                         font-size: 28px;
                         &:hover{
@@ -152,11 +167,11 @@
                     } //a
                 } //h2
                 .post-meta{
-                    font-family: 'Cormorant Garamond', serif;
+                    font-family: 'Cormorant', serif;
                     font-style: italic;
                     font-weight: lighter;
                     #text{
-                        font-family: 'Cormorant Garamond', serif;
+                        font-family: 'Cormorant', serif;
                         font-style: italic;
                         font-weight: lighter;
                     }
@@ -166,7 +181,7 @@
                 p{
                     width: 100%;
                     margin-top: 20px;
-                    font-family: 'Cormorant Garamond', serif;
+                    font-family: 'Cormorant', serif;
                     font-style: italic;
                     font-weight: lighter;
                     font-size: 22px;
@@ -181,9 +196,6 @@
                 font-size: 22px;
                 line-height: 10px;
             }//a
-                hr.division{
-                    display: none;
-                }//hr.division
         }//.posts-container
 
     }//.lastests

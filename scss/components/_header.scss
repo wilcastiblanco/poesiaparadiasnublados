@@ -26,7 +26,7 @@
                 display: none;
             }
         }
-        .nav-links{
+        #menu-menu{
             position: absolute;
             z-index: 1000;
         }
@@ -45,9 +45,9 @@
         }
         .nav-button{
             z-index: 2000;
-            .nav-links{
-                height: 80%;
-                width: 100%;
+            #menu-menu{
+                height: 100%;
+                width: 50%;
                 border-bottom: 0.5px solid #979797;
                 background-color: rgba(0, 0, 0, 0.85);
                 position: fixed;
@@ -55,7 +55,7 @@
                 flex-direction: column;
                 justify-content: space-around;
                 align-items: center;
-                transform: translateX(-100%);
+                transform: translateX(-50%);
                 transition: transform 0.5s ease-in;
                 li{
                     a{
@@ -94,7 +94,7 @@
     .screen{
         .nav-top{
             height: 110px;
-            padding: 15px;
+            padding: 15px 20px;
             border-bottom: 0.5px solid #979797;
             display: flex;
             align-items: center;
@@ -120,13 +120,13 @@
                         height: 32px;
                         border-radius: 0;
                         line-height: 20px;
-                        font-family: 'Cormorant Garamond', serif;
+                        font-family: 'Cormorant', serif;
                         font-style: italic;
                         font-size: 19px;
                     }
                     button{
                         line-height: 20px;
-                        font-family: 'Cormorant Garamond', serif;
+                        font-family: 'Cormorant', serif;
                         font-style: italic;
                         font-weight: 600;
                         font-size: 16px;
@@ -148,7 +148,44 @@
             }
         .nav-button{
             border-bottom: 0.5px solid #979797;
+            padding: 0 5px;
             @include hover-ul-li-pink; 
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .menu-menu-container{
+                height: 20px;
+                margin: 10px;
+                ul{
+                    display: flex;
+                    li{
+                        display: flex;
+                        flex-wrap: nowrap;
+                        a{
+                            color: black;
+                            margin-right: 20px;
+                            font-size: 16px;
+                            font-weight: bold;
+                            &:hover{
+                                color: #EA6852;
+                                text-decoration: none;
+                                transition: color 0.2s;
+                            }
+                        }
+                    }
+                }
+            }
+            .nav-search{
+                width: 20px;
+                height: 20px;
+                margin: 10px;
+                display: flex;
+                a{
+                    i{
+                        color: gray;
+                    }
+                }
+            }
         }
     }
 }
