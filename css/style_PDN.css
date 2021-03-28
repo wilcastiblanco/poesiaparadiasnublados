@@ -187,6 +187,7 @@ main a:hover {
   }
   .inicial_page .expectativa {
     width: 90%;
+    max-width: 1200px;
     height: 600px;
     padding: 0px 0 15px 0;
     text-align: center;
