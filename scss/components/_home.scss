@@ -1,9 +1,21 @@
+$break-extrasmall: 200px;
+$break-small: 576px;
+$break-medium: 768px;
+$break-large: 992px;
+$mbreak-extralarge: 1200px;
 
-
-@media (min-width: $break-extrasmall) {
-
+@mixin go {
+    color: #EA6852;
+    &:hover{
+        color: gray;
+        transition: color 0.4s;
+    }
 }
-@media screen and (min-width: $break-medium) {
+
+
+
+// Query Smartphone
+@media (min-width: $break-extrasmall){
     .inicial_page{
         width: 100%;
         height: 100vh;
@@ -13,18 +25,186 @@
         align-items: center;
         text-align: center;
         .expectativa{
-            width: 900px;
-            height: 560px;
+            width: 90%;
+            height: 600px;
+            padding: 0px 0 15px 0;
             text-align: center;
             display: flex;
             flex-direction: column;            
-            justify-content: space-around;
+            justify-content: space-between;
             .logo_expectativa{
                 margin-bottom: 30px;
+                display: flex;
+                align-self: center;
+                flex-basis: auto;
+                img{
+                    // width: 500px;
+                }
             }
             h2{
                 font-style: italic;
                 color: #EA6852;
+            }
+            .caja_landing{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                flex-wrap: wrap;
+                .podcast_expectativa{
+                    width: 600px;
+                    justify-content: flex-start;
+                    h3{
+                        font-size: 30px;
+                        font-style: italic;
+                        text-align: center;
+
+                    }
+                }
+                .mail_list{
+                    width: 525px;
+                    padding: 5px;
+                    background-color: #EA6852;
+                    border-radius: 7px;
+                    h3{
+                        font-style: italic;
+                        text-align: start;
+                        color: white;
+                        line-height: 0.5;
+                        margin: 10px 0 0 5px;
+                        font-size: 25px;
+                    }
+                    form{
+                        padding: 10px;
+                        div{
+                                width: 100%;
+                                text-align: start;
+                                input{
+                                    width: 100%;
+                                    height: 31px;
+                                    margin-bottom: 8px;
+                                    border-width: 0;
+                                    padding: 3px;
+                                }
+                                textarea{
+                                    width: 100%;
+                                    margin-bottom: 8px;
+                                    padding: 3px;
+                                    border-width: 0;
+                                }
+                                button{
+                                    background-color: white;
+                                    width: 140px;
+                                    border-width: 0;
+                                    border-radius: 3px;
+                                    @include go
+                                }
+                        }
+                    }
+                }
+            }
+            h2{
+                margin: 20px;
+            }
+            .side-social{
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+// Query Screen
+@media screen and (min-width: $break-large){
+    .inicial_page{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        .expectativa{
+            width: 90%;
+            height: 600px;
+            padding: 0px 0 15px 0;
+            text-align: center;
+            display: flex;
+            flex-direction: column;            
+            justify-content: space-between;
+
+            .logo_expectativa{
+                margin-bottom: 30px;
+                display: flex;
+                align-self: center;
+                flex-basis: auto;
+                img{
+                    // width: 500px;
+                }
+            }
+            h2{
+                font-style: italic;
+                color: #EA6852;
+            }
+            .caja_landing{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                flex-wrap: wrap;
+                .podcast_expectativa{
+                    width: 600px;
+                    padding: 15px;
+                    justify-content: flex-start;
+                    h3{
+                        font-size: 35px;
+                        font-style: italic;
+                        text-align: start;
+                    }
+                }
+                .mail_list{
+                    width: 525px;
+                    padding: 5px;
+                    background-color: #EA6852;
+                    border-radius: 7px;
+                    h3{
+                        font-style: italic;
+                        text-align: start;
+                        color: white;
+                        line-height: 0.5;
+                        margin: 10px 0 0 5px;
+                        font-size: 25px;
+                    }
+                    form{
+                        padding: 10px;
+                        div{
+                                width: 100%;
+                                text-align: start;
+                                input{
+                                    width: 100%;
+                                    height: 31px;
+                                    margin-bottom: 8px;
+                                    border-width: 0;
+                                    padding: 3px;
+                                }
+                                textarea{
+                                    width: 100%;
+                                    margin-bottom: 8px;
+                                    padding: 3px;
+                                    border-width: 0;
+                                }
+                                button{
+                                    background-color: white;
+                                    width: 140px;
+                                    border-width: 0;
+                                    border-radius: 3px;
+                                    @include go
+                                }
+                        }
+                    }
+                }
+            }
+            .side-social{
+                margin-bottom: 20px;
             }
         }
     }

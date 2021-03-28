@@ -35,18 +35,24 @@
 	<main class="inicial_page">
 
 		<div class="expectativa">
-		<div class="logo_expectativa">
-			<img src="<?php echo get_template_directory_uri();?>/img/Logo_PDN.svg" alt="" width="500px">
-		</div>
-		<div class="podcast_expectativa">
-			<iframe src="https://open.spotify.com/embed-podcast/episode/1wCv3qH3VhzwL0r36iNxRq" width="600" height="160" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-		</div>
-			<h2>
-			Empieza tu día,
-			<br>
-			con más poesía.
-			
-			</h2>
+			<div class="logo_expectativa">
+				<img class="d-block d-md-none" src="<?php echo get_template_directory_uri();?>/img/Logo_pdn_small.svg" alt="" width="250px">
+				<img class="d-none d-md-block" src="<?php echo get_template_directory_uri();?>/img/Logo_PDN.svg" alt="" width="500px">
+
+			</div>
+				<h2 class="land_head">
+				¡Empieza tu día, con más poesía!	
+				</h2>
+			<div class="caja_landing">
+				<div class="podcast_expectativa">
+					<h3>Podcast de la semana</h3>
+					<iframe src="https://open.spotify.com/embed-podcast/episode/1wCv3qH3VhzwL0r36iNxRq" width="100%" height="164" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+				</div>
+				<div class="mail_list">
+					<h3 class="land_foot">Coméntanos</h3>
+					<?php echo do_shortcode('[mc4wp_form id="222"]'); ?>
+				</div>
+			</div> <!-- caja_landing -->
 			<h2>			
 			¡Espera nuestro sitio web!
 			</h2>
@@ -57,7 +63,8 @@
 						<a href="https://open.spotify.com/show/1Sx4Tu0UIhvWFoFCAOmsTn?si=Babg0a7YQ86H54mVZSAZsw" target="_blank"><i class="fab fa-spotify"></i></a>
 				</div><!-- caja-social - incluye links para redes sociales -->
 			</div><!-- side-social -->
-		</div>
+
+		</div><!-- expectativa -->
 
 	</main>
 
